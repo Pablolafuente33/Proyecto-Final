@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class Individuo {
+    -id: int
+    -generacion: int
+    -turnosDeVida: int
+    -probabilidadReproducción: int
+    -probabilidadClonacion: int
+    -probabilidadMuerte: int
+    -tipo: String
+    +moverse(): String
+    +reproducirse(individuo Individuo):
+    +clonarse():
+}
+class Tablero{
+    -tamaño
+    -individuos:
+    -recursos: List []
+    +actualizar()
+    +reproducirIndividuos(individuo1 Individuo, individuo2 Individuo)
+    +moverIndividuo(individuo Individuo)
+
+}
+
+class Movimiento{
+
+}
+Movimiento <-- Individuo: Puede
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+@enduml
