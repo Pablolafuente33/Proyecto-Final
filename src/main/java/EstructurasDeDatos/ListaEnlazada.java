@@ -15,12 +15,14 @@ public class ListaEnlazada <T>{
         return primero;
     }
     public NodoLE<T> getUltimo(){
-        NodoLE<T> i = primero;
-        while (i != null && i.getSiguiente() != null){
-            NodoLE<T> ultimo = i.getSiguiente();
-            return ultimo;
+        if (primero == null) {
+            return null;
         }
-        return null;
+        NodoLE<T> i = primero;
+        while (i.getSiguiente() != null){
+            NodoLE<T> ultimo = i.getSiguiente();
+        }
+        return i;
     }
     public void add (T dato){
         NodoLE<T> nodo = new NodoLE<>(dato);
@@ -32,5 +34,24 @@ public class ListaEnlazada <T>{
     }
     public void insert (T dato, int pos){
         NodoLE<T> nodo = new NodoLE<>(dato);
+        if (pos == 0){
+            nodo.insertarmeEn(primero);
+            primero = nodo;
+        } else{
+            int i = 0;
+            NodoLE <T> anterior = null;
+            NodoLE <T> actual = primero;
+            while (actual != null && i < pos){
+               anterior = actual;
+               actual = actual.getSiguiente();
+               i++;
+            }
+            if (i == pos){
+                anterior.insertarmeEn(nodo);
+                nodo.insertarmeEn(actual);
+            }else {
+                throw new IndexOutOfBoundsException("Posicion fuera de rango");
+            }
+        }
     }
 }

@@ -1,3 +1,5 @@
+package com.example.demo;
+
 public class Individuo {
     private int id;
     private int generacion;
@@ -16,10 +18,7 @@ public class Individuo {
     public String Moverse(){
         String tipoMovimiento = null;
         return tipoMovimiento;
+    }
 
-    }
-    public Individuo reproducirse(Individuo individuo){
-        return nuevoIndividuo;
-    }
 
 }
