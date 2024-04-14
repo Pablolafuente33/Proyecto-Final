@@ -1,8 +1,15 @@
 package com.example.demo;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 
 public class Controller {
     @FXML
-    protected void cargar;
+    private Label welcomeText;
+    @FXML
+    public void onNewGameButtonClick(){
+
+        ;
+    }
+
 }

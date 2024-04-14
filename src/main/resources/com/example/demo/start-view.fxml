@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+   <children>
+      <VBox alignment="CENTER" disable="true" layoutX="101.0" layoutY="59.0" prefHeight="288.0" prefWidth="398.0" spacing="20.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="426.0" text="Nueva Partida" AnchorPane.topAnchor="59.0" />
+            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="426.0" text="Cargar Partida" />
+         </children>
+      </VBox>
+      <Label layoutX="154.0" layoutY="45.0" prefHeight="28.0" prefWidth="293.0" text="Bienvenido al Juego De La Vida" textAlignment="CENTER">
+         <font>
+            <Font name="Centaur" size="22.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

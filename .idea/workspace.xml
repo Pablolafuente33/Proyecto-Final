@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/StartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/ListaEnlazadaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/NodoLETest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/PilaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaEnlazada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaEnlazada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Pila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Pila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main_Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Main_Pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/StartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,43 +51,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Main_Pruebas.executor&quot;: &quot;Coverage&quot;,
-    &quot;Application.StartApplication.executor&quot;: &quot;Coverage&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
-    &quot;JUnit.ListaEnlazadaTest.add.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.ListaEnlazadaTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ListaEnlazadaTest.getPrimero.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.ListaEnlazadaTest.getUltimo.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.ListaEnlazadaTest.isVacia.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NodoLETest.getDato.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NodoLETest.getSiguiente.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NodoLETest.insertarmeEn.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.NodoLETest.setDato.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PilaTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.PilaTest.pop.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.PilaTest.push.executor&quot;: &quot;Coverage&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/Documents/ESTRUCTURADATOS/Proyecto-Final&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Debug",
+    "Application.Main_Pruebas.executor": "Coverage",
+    "Application.StartApplication.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Class",
+    "JUnit.ListaEnlazadaTest.add.executor": "Coverage",
+    "JUnit.ListaEnlazadaTest.executor": "Run",
+    "JUnit.ListaEnlazadaTest.getPrimero.executor": "Coverage",
+    "JUnit.ListaEnlazadaTest.getUltimo.executor": "Coverage",
+    "JUnit.ListaEnlazadaTest.isVacia.executor": "Coverage",
+    "JUnit.NodoLETest.getDato.executor": "Coverage",
+    "JUnit.NodoLETest.getSiguiente.executor": "Coverage",
+    "JUnit.NodoLETest.insertarmeEn.executor": "Coverage",
+    "JUnit.NodoLETest.setDato.executor": "Run",
+    "JUnit.PilaTest.executor": "Coverage",
+    "JUnit.PilaTest.pop.executor": "Coverage",
+    "JUnit.PilaTest.push.executor": "Coverage",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/santi/Documents/ESTRUCTURADATOS/el3-avl-y-grafos-miguel-y-pablo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -220,6 +210,9 @@
       <workItem from="1712847012076" duration="11684000" />
       <workItem from="1712910833121" duration="128000" />
       <workItem from="1712911813191" duration="1161000" />
+      <workItem from="1712916624364" duration="565000" />
+      <workItem from="1712917414831" duration="413000" />
+      <workItem from="1713102511041" duration="5289000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
