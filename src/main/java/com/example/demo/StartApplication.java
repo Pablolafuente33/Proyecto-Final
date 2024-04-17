@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -8,15 +9,17 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StartApplication extends Application {
+
     @Override
-    public void start(Stage stage1) throws IOException{
+    public void start(Stage stage) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("start-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500,500);
-        stage1.setTitle("El Juego De La Vida");
-        stage1.setScene(scene);
-        stage1.show();
+        Scene scene = new Scene(fxmlLoader.load(), 600,450);
+        stage.setTitle("El Juego De La Vida");
+        stage.setScene(scene);
+        stage.show();
     }
     public static void main (String [] args){
         launch();
     }
 }
+
