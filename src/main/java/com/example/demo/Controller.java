@@ -1,20 +1,42 @@
 package com.example.demo;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import  java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 public class Controller implements Initializable {
+
     private Stage stage = new Stage();
     @FXML
-    private Label welcomeText;
+    private Label labelSliderValue;
+    @FXML
+    private Slider miSlider;
+
     private StartApplication startApplication;
+
+    /**
+     * Propiedades "bindeadas" que permite interconectar elementos visuales.
+     */
+    protected StringProperty texto = new SimpleStringProperty("No hay nada");
+    protected IntegerProperty medida = new SimpleIntegerProperty(5);
+
+    /**
+     * Modelo de datos
+     */
+    protected ParameterDataModel parametrosData = new ParameterDataModel(7,10,"Jorge");
+    protected ParameterDataModelProperties modeloParaGUICompartido = new ParameterDatModelProperties(parametrosData);
     @FXML
     public void onNewGameButtonClick(){
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("newGame-view.fxml"));
@@ -42,7 +64,11 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize (URL url, ResourceBundle resourceboundle){
-
+        miSlider.valueProperty().bindBidirectional(medida);
+        labelSliderValue.textProperty().bind(medida.asString());
     }
-
+    private double aleatoryValue(double min, double max){
+        Random random = new Random();
+        return min + (max - min) * random.nextDouble();
+    }
 }

@@ -4,21 +4,15 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="489.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
-   <children>
-      <VBox alignment="CENTER" layoutX="200.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
-         <children>
-            <Label text="Label" />
-            <Slider majorTickUnit="100.0" minorTickCount="1" showTickLabels="true" />
-            <Label layoutX="96.0" layoutY="165.0" text="Label" />
-            <Slider majorTickUnit="100.0" minorTickCount="2" showTickLabels="true" />
-            <Label text="Label" />
-            <Slider majorTickUnit="100.0" minorTickCount="1" showTickLabels="true" />
-            <Label layoutX="96.0" layoutY="52.0" text="Label" />
-            <Slider layoutX="10.0" layoutY="141.0" majorTickUnit="100.0" minorTickCount="5" showTickLabels="true" />
-            <Label layoutX="96.0" layoutY="178.0" text="Label" />
-            <Slider layoutX="10.0" layoutY="190.0" majorTickUnit="100.0" minorTickCount="1" showTickLabels="true" />
-         </children>
-      </VBox>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Atrás" />
-   </children>
+<children>
+   <VBox alignment="CENTER" layoutX="182.0" layoutY="39.0" prefHeight="374.0" prefWidth="236.0" spacing="10.0">
+      <Label text="Label" />
+      <HBox prefHeight="23.0" prefWidth="236.0">
+         <Slider fx:id="miSlider" majorTickUnit="100.0" minorTickCount="1" prefHeight="33.0" prefWidth="203.0" showTickLabels="true" snapToTicks="true" />
+         <Label fx:id="labelSliderValue" text="--" />
+      </HBox>
+      <TextField />
+   </VBox>
+   <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Atrás" />
+</children>
 </AnchorPane>
