@@ -22,7 +22,7 @@ public class Controller implements Initializable{
     /**
      * Propiedades "bindeadas" que permite interconectar elementos visuales.
      */
-    private ParameterDataModel parametrosData = new ParameterDataModel(7, 10, "Juanito");
+    private Individuo parametrosData = new Individuo(7,23,43,50,23,"Normal");
     private ParameterDataModelProperties modeloParaGUICompartido = new ParameterDataModelProperties(parametrosData);
 
 
@@ -59,10 +59,12 @@ public class Controller implements Initializable{
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-
+        vidaSlider.valueProperty().bindBidirectional(medida);
+        sliderValue.textProperty().bind(medida.asString);
     }
     private double aleatoryValue(double min, double max){
         Random random = new Random();
         return min + (max - min) * random.nextDouble();
     }
+
 }

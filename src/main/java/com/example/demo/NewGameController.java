@@ -17,16 +17,43 @@ import  java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class NewGameController implements Initializable {
+public  class NewGameController implements Initializable{
     @FXML
-    protected Slider miSlider;
+    protected Slider vidaSlider;
+    @FXML
+    protected Slider reproduccionSlider;
+    @FXML
+    protected Slider clonacionSlider;
     @FXML
     protected Label sliderValue;
+    @FXML
+    protected Label sliderVidaValue;
+    @FXML
+    protected Label sliderreproduccionValue;
+    @FXML
+    protected Label sliderClonacionValue;
+    private Stage stage;
+    private ParameterDataModelProperties model;
+
     protected StringProperty texto = new SimpleStringProperty("No Hay Nada");
     protected IntegerProperty medida = new SimpleIntegerProperty(0);
     @Override
-    public void initialize(URL url, ResourceBoundle resourceBoundle){
-        miSlider.valueProperty().bindBidirectional(medida);
+    public void initialize(URL url, Individuo individuo){
+        vidaSlider.valueProperty().bindBidirectional(medida);
         sliderValue.textProperty().bind(medida.asString);
     }
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+    public void updateGUIWithModel(){
+        vidaSlider.valueProperty().bindBidirectional(model.vidaProperty());
+        reproduccionSlider.valueProperty().bindBidirectional(model.probabilidadReproduccionProperty());
+        clonacionSlider.valueProperty().bindBidirectional(model.probabilidadClonacionProperty());
+
+    }
+    public void loadUserData(ParameterDataModelProperties parameterDataModel){
+        this.model = parameterDataModel;
+        this.updateGUIWithModel();
+    }
+
 }
