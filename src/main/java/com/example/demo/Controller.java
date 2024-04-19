@@ -16,27 +16,16 @@ import java.io.IOException;
 import  java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
-public class Controller implements Initializable {
-
+public class Controller implements Initializable{
     private Stage stage = new Stage();
-    @FXML
-    private Label labelSliderValue;
-    @FXML
-    private Slider miSlider;
-
-    private StartApplication startApplication;
 
     /**
      * Propiedades "bindeadas" que permite interconectar elementos visuales.
      */
-    protected StringProperty texto = new SimpleStringProperty("No hay nada");
-    protected IntegerProperty medida = new SimpleIntegerProperty(5);
+    private ParameterDataModel parametrosData = new ParameterDataModel(7, 10, "Juanito");
+    private ParameterDataModelProperties modeloParaGUICompartido = new ParameterDataModelProperties(parametrosData);
 
-    /**
-     * Modelo de datos
-     */
-    protected ParameterDataModel parametrosData = new ParameterDataModel(7,10,"Jorge");
-    protected ParameterDataModelProperties modeloParaGUICompartido = new ParameterDatModelProperties(parametrosData);
+
     @FXML
     public void onNewGameButtonClick(){
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("newGame-view.fxml"));
@@ -44,6 +33,9 @@ public class Controller implements Initializable {
             Scene scene = new Scene(fxmlLoader.load(), 600, 450);
             stage.setTitle("Configuración");
             stage.setScene(scene);
+            NewGameController c = new NewGameController();
+            c.loadUserData(this.modeloParaGUICompartido);
+            c.setStage(stage);
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
@@ -56,16 +48,18 @@ public class Controller implements Initializable {
             Scene scene = new Scene(fxmlLoader.load(), 600, 450);
             stage.setTitle("Cargar Partida");
             stage.setScene(scene);
+            NewGameController c = fxmlLoader.getController();
+            c.loadUserData(this.modeloParaGUICompartido);
+            c.setStage(stage);
             stage.show();
+
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-
     @Override
-    public void initialize (URL url, ResourceBundle resourceboundle){
-        miSlider.valueProperty().bindBidirectional(medida);
-        labelSliderValue.textProperty().bind(medida.asString());
+    public void initialize(URL url, ResourceBundle resourceBundle){
+
     }
     private double aleatoryValue(double min, double max){
         Random random = new Random();
