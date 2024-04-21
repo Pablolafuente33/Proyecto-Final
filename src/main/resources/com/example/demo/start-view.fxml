@@ -12,9 +12,9 @@
             <Button mnemonicParsing="false" onAction="#onChargeGameButtonClick" prefHeight="45.0" prefWidth="426.0" text="Cargar Partida" />
          </children>
       </VBox>
-      <Label alignment="CENTER" layoutX="154.0" layoutY="45.0" prefHeight="28.0" prefWidth="293.0" text="Bienvenido al Juego De La Vida" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="119.0" layoutY="40.0" prefHeight="38.0" prefWidth="363.0" text="Bienvenido al Juego De La Vida" textAlignment="CENTER" textFill="#24ae1d">
          <font>
-            <Font name="Centaur" size="22.0" />
+            <Font name="Centaur" size="30.0" />
          </font>
       </Label>
    </children>
