@@ -8,8 +8,8 @@
    <VBox alignment="CENTER" layoutX="182.0" layoutY="39.0" prefHeight="374.0" prefWidth="236.0" spacing="10.0">
       <Label text="Label" />
       <HBox prefHeight="23.0" prefWidth="236.0">
-         <Slider fx:id="miSlider" majorTickUnit="100.0" minorTickCount="1" prefHeight="33.0" prefWidth="203.0" showTickLabels="true" snapToTicks="true" />
-         <Label fx:id="labelSliderValue" text="--" />
+         <Slider fx:id="vidaSlider" majorTickUnit="100.0" minorTickCount="1" prefHeight="33.0" prefWidth="203.0" showTickLabels="true" />
+         <Label fx:id="sliderVidaValue" text="--" />
       </HBox>
       <TextField />
    </VBox>

@@ -16,14 +16,14 @@ import java.io.IOException;
 import  java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
-public class Controller implements Initializable{
+public class Controller{
     private Stage stage = new Stage();
 
     /**
      * Propiedades "bindeadas" que permite interconectar elementos visuales.
      */
     private Individuo parametrosData = new Individuo(7,23,43,50,23,"Normal");
-    private ParameterDataModelProperties modeloParaGUICompartido = new ParameterDataModelProperties(parametrosData);
+    private final ParameterDataModelProperties modeloParaGUICompartido = new ParameterDataModelProperties(parametrosData);
 
 
     @FXML
@@ -31,10 +31,10 @@ public class Controller implements Initializable{
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("newGame-view.fxml"));
         try{
             Scene scene = new Scene(fxmlLoader.load(), 600, 450);
-            stage.setTitle("Configuración");
+            stage.setTitle("Configuración:");
             stage.setScene(scene);
-            NewGameController c = new NewGameController();
-            c.loadUserData(this.modeloParaGUICompartido);
+            NewGameController c = fxmlLoader.getController();
+            c.loadUserData(modeloParaGUICompartido);
             c.setStage(stage);
             stage.show();
         }catch (Exception e){
@@ -49,19 +49,14 @@ public class Controller implements Initializable{
             stage.setTitle("Cargar Partida");
             stage.setScene(scene);
             NewGameController c = fxmlLoader.getController();
-            c.loadUserData(this.modeloParaGUICompartido);
+            c.loadUserData(modeloParaGUICompartido);
             c.setStage(stage);
             stage.show();
-
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle){
-        vidaSlider.valueProperty().bindBidirectional(medida);
-        sliderValue.textProperty().bind(medida.asString);
-    }
+
     private double aleatoryValue(double min, double max){
         Random random = new Random();
         return min + (max - min) * random.nextDouble();

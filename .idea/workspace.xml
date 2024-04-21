@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/ParameterDataModelProperties.java" afterDir="false" />
+    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/ParameterDataModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +219,9 @@
       <workItem from="1713362654524" duration="6760000" />
       <workItem from="1713461115092" duration="8073000" />
       <workItem from="1713516627463" duration="6200000" />
-      <workItem from="1713538772337" duration="3563000" />
+      <workItem from="1713538772337" duration="3820000" />
+      <workItem from="1713607060540" duration="7028000" />
+      <workItem from="1713694443935" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -229,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712769244864</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 7">
+      <option name="closed" value="true" />
+      <created>1713542582838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713542582838</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +247,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1" />
+    <MESSAGE value="Commit 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 7" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$PilaTest.ic" NAME="PilaTest Coverage Results" MODIFIED="1712853737873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

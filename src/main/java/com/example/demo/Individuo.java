@@ -8,16 +8,19 @@ public class Individuo {
     private int probabilidadClonacion;
     private int probabilidadMuerte = 100 - probabilidadReproduccion;
     private String tipo;
-    public Individuo(int id, int generacion, int turnosVida, int probabilidadReproduccion, int probabilidadClonacion, String tipo){
+
+    public Individuo(int id, int generacion, int turnosVida, int probabilidadReproduccion, int probabilidadClonacion, String tipo) {
         this.id = id;
         this.generacion = generacion;
         this.Vida = turnosVida;
         this.probabilidadReproduccion = probabilidadReproduccion;
         this.probabilidadMuerte = 100 - probabilidadReproduccion;
     }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -25,6 +28,7 @@ public class Individuo {
     public int getGeneracion() {
         return generacion;
     }
+
     public void setGeneracion(int generacion) {
         this.generacion = generacion;
     }
@@ -32,6 +36,7 @@ public class Individuo {
     public int getVida() {
         return Vida;
     }
+
     public void setVida(int turnosVida) {
         this.Vida = turnosVida;
     }
@@ -39,6 +44,7 @@ public class Individuo {
     public int getProbabilidadReproduccion() {
         return probabilidadReproduccion;
     }
+
     public void setProbabilidadReproduccion(int probabilidadReproduccion) {
         this.probabilidadReproduccion = probabilidadReproduccion;
     }
@@ -46,6 +52,7 @@ public class Individuo {
     public int getProbabilidadClonacion() {
         return probabilidadClonacion;
     }
+
     public void setProbabilidadClonacion(int probabilidadClonacion) {
         this.probabilidadClonacion = probabilidadClonacion;
     }
@@ -53,12 +60,9 @@ public class Individuo {
     public String getTipo() {
         return tipo;
     }
+
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
-    public String Moverse() {
-        String tipoMovimiento = null;
-        return tipoMovimiento;
-    }
 }
+
