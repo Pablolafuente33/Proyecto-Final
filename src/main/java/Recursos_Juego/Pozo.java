@@ -40,4 +40,7 @@ public class Pozo {
     public void setMuerte(int muerte) {
         this.muerte = muerte;
     }
+    public String toString(){
+        return "Pozo";
+    }
 }

@@ -5,6 +5,7 @@ public class Agua {
     protected int clonacion;
     protected int reproduccion;
     protected int muerte;
+
     public Agua (int turnosDeVida, int clonacion, int reproduccion){
         this.turnosDeVida = turnosDeVida;
         this.clonacion = clonacion;

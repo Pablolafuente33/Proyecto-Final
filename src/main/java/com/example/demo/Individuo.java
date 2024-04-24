@@ -48,7 +48,12 @@ public class Individuo {
     public void setProbabilidadReproduccion(int probabilidadReproduccion) {
         this.probabilidadReproduccion = probabilidadReproduccion;
     }
-
+    public int getProbabilidadMuerte(){
+        return 100 - probabilidadMuerte;
+    }
+    public void setProbabilidadMuerte(int probabilidadReproduccion){
+        this.probabilidadMuerte = 100 - probabilidadReproduccion;
+    }
     public int getProbabilidadClonacion() {
         return probabilidadClonacion;
     }

@@ -5,7 +5,7 @@ public class Montaña {
     protected int clonacion;
     protected int reproduccion;
     protected int muerte;
-    public Montña (int turnosDeVida, int clonacion, int reproduccion){
+    public Montaña (int turnosDeVida, int clonacion, int reproduccion){
         this.turnosDeVida = turnosDeVida;
         this.clonacion = clonacion;
         this.reproduccion = reproduccion;
@@ -38,5 +38,8 @@ public class Montaña {
     }
     public void setMuerte(int muerte) {
         this.muerte = muerte;
+    }
+    public String toString(){
+        return "Montaña";
     }
 }
