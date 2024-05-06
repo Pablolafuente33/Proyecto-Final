@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
 
-<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
-    <Rectangle fx:id="cell1100" height="20" width="20" GridPane.columnIndex="1" />
-    <Rectangle fx:id="cell1101" height="20" width="20" GridPane.columnIndex="1" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+   <children>
+      <Label text="Label" textAlignment="CENTER" textFill="#1c19f7" />
+   </children>
 </GridPane>

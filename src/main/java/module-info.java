@@ -9,4 +9,8 @@ module com.example.demo {
 
     opens com.example.demo to javafx.fxml;
     exports com.example.demo;
+    exports Tablero;
+    opens Tablero to javafx.fxml;
+    exports Controllers;
+    opens Controllers to javafx.fxml;
 }

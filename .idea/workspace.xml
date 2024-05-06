@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 7">
+    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 9">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" afterDir="false" />
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +30,9 @@
       <list>
         <option value="UML Sequence" />
         <option value="UML Class" />
-        <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,11 +68,20 @@
     "Application.Main_Pruebas.executor": "Coverage",
     "Application.StartApplication.executor": "Run",
     "DefaultPlantUmlFileTemplate": "UML Class",
+<<<<<<< HEAD
+=======
+    "Downloaded.Files.Path.Enabled": "false",
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "JUnit.ListaEnlazadaTest.add.executor": "Coverage",
     "JUnit.ListaEnlazadaTest.executor": "Run",
     "JUnit.ListaEnlazadaTest.getPrimero.executor": "Coverage",
     "JUnit.ListaEnlazadaTest.getUltimo.executor": "Coverage",
     "JUnit.ListaEnlazadaTest.isVacia.executor": "Coverage",
+<<<<<<< HEAD
+=======
+    "JUnit.ListaSimpleTest.add.executor": "Coverage",
+    "JUnit.ListaSimpleTest.getNumeroElementos.executor": "Run",
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "JUnit.NodoLETest.getDato.executor": "Coverage",
     "JUnit.NodoLETest.getSiguiente.executor": "Coverage",
     "JUnit.NodoLETest.insertarmeEn.executor": "Coverage",
@@ -66,6 +89,12 @@
     "JUnit.PilaTest.executor": "Coverage",
     "JUnit.PilaTest.pop.executor": "Coverage",
     "JUnit.PilaTest.push.executor": "Coverage",
+<<<<<<< HEAD
+=======
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -73,16 +102,27 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/migue/Desktop/UAH/1º/2º CUATRIMESTRE/METODOLOGÍA DE LA PROGRAMACIÓN/Prácticas/Proyecto-Final",
+=======
+    "last_opened_file_path": "C:/Users/santi/Documents/ESTRUCTURADATOS/Proyecto-Final",
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+=======
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -103,7 +143,7 @@
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="PATTERN" value="Tablero.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,7 +156,7 @@
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="PATTERN" value="Tablero.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodoLETest.getDato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListaSimpleTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +173,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.NodoLETest" />
-      <option name="METHOD_NAME" value="getDato" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodoLETest.insertarmeEn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListaSimpleTest.getNumeroElementos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +189,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.NodoLETest" />
-      <option name="METHOD_NAME" value="insertarmeEn" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
+      <option name="METHOD_NAME" value="getNumeroElementos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,10 +215,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.StartApplication" />
+        <item itemvalue="JUnit.ListaSimpleTest.add" />
+        <item itemvalue="JUnit.ListaSimpleTest.getNumeroElementos" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.NodoLETest.setDato" />
-        <item itemvalue="JUnit.NodoLETest.getDato" />
-        <item itemvalue="JUnit.NodoLETest.insertarmeEn" />
       </list>
     </recent_temporary>
   </component>
@@ -215,8 +255,26 @@
       <workItem from="1713516627463" duration="6200000" />
       <workItem from="1713538772337" duration="3820000" />
       <workItem from="1713607060540" duration="7028000" />
+<<<<<<< HEAD
       <workItem from="1713694443935" duration="1065000" />
       <workItem from="1715007160942" duration="777000" />
+=======
+      <workItem from="1713694443935" duration="7197000" />
+      <workItem from="1713712467682" duration="2870000" />
+      <workItem from="1713949402012" duration="19800000" />
+      <workItem from="1714051499905" duration="13776000" />
+      <workItem from="1714123674248" duration="140000" />
+      <workItem from="1714123848532" duration="1373000" />
+      <workItem from="1714142496093" duration="2621000" />
+      <workItem from="1714207613979" duration="2614000" />
+      <workItem from="1714326524471" duration="4812000" />
+      <workItem from="1714747933548" duration="5009000" />
+      <workItem from="1714817592845" duration="872000" />
+      <workItem from="1714850267055" duration="620000" />
+      <workItem from="1714905814975" duration="183000" />
+      <workItem from="1715000770021" duration="5529000" />
+      <workItem from="1715009903200" duration="1719000" />
+>>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -234,16 +292,53 @@
       <option name="project" value="LOCAL" />
       <updated>1713542582838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit 7">
+      <option name="closed" value="true" />
+      <created>1713695566894</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713695566894</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit 8">
+      <option name="closed" value="true" />
+      <created>1713701628497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713701628497</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit 9">
+      <option name="closed" value="true" />
+      <created>1713982142924</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713982142924</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7" />
+    <MESSAGE value="Commit 8" />
+    <MESSAGE value="Commit 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 9" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$PilaTest.ic" NAME="PilaTest Coverage Results" MODIFIED="1712853737873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -256,6 +351,9 @@
       <FILTER>EstructurasDeDatos.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_add.ic" NAME="ListaEnlazadaTest.add Coverage Results" MODIFIED="1712859620094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>EstructurasDeDatos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$ListaSimpleTest_add.ic" NAME="ListaSimpleTest.add Coverage Results" MODIFIED="1713715325835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>EstructurasDeDatos.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_isVacia.ic" NAME="ListaEnlazadaTest.isVacia Coverage Results" MODIFIED="1712859577844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -281,6 +379,9 @@
       <FILTER>EstructurasDeDatos.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/demo$NodoLETest_setDato.ic" NAME="NodoLETest.setDato Coverage Results" MODIFIED="1712859978988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>EstructurasDeDatos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$ListaSimpleTest_getNumeroElementos.ic" NAME="ListaSimpleTest.getNumeroElementos Coverage Results" MODIFIED="1713714750157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>EstructurasDeDatos.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_getUltimo.ic" NAME="ListaEnlazadaTest.getUltimo Coverage Results" MODIFIED="1712859550966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

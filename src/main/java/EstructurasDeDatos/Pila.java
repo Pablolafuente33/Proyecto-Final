@@ -14,7 +14,7 @@ public class Pila <T> {
     public void push(T dato){
         NodoLE<T> nodo = new NodoLE<>(dato);
         if (cima != null){
-            nodo.insertarmeEn(cima);
+            nodo.setSiguiente(cima);
         }
         cima = nodo;
     }
