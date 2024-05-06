@@ -1,29 +1,56 @@
 package com.example.demo;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import Recursos_Juego.Recurso;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.Slider;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-import  java.net.URL;
 import java.util.Random;
-import java.util.ResourceBundle;
+
 public class Controller{
     private Stage stage = new Stage();
 
     /**
      * Propiedades "bindeadas" que permite interconectar elementos visuales.
      */
-    private Individuo parametrosData = new Individuo(7,23,43,50,23,"Normal");
-    private final ParameterDataModelProperties modeloParaGUICompartido = new ParameterDataModelProperties(parametrosData);
+    private Individuo parametrosDataIndividuo = new Individuo(7,23,43,50,23,"Normal");
+    private Recurso parameterDataRecursos = new Recurso(7, 8, 9, 10) {
+        @Override
+        public void setVida(int vida) {
+            this.vidaPropertie = vida;
+        }
+        @Override
+        public int getVida() {
+            return 0;
+        }
+        @Override
+        public int getClonacion() {
+            return 0;
+        }
+        @Override
+        public void setClonacion(int clonacion) {
+            this.clonacionPropertie = clonacion;
+        }
+        @Override
+        public int getReproduccion() {
+            return 0;
+        }
+        @Override
+        public void setReproduccion(int reproduccion) {
+            this.reproduccionPropertie = reproduccion;
+        }
+        @Override
+        public int getMuerte() {
+            return 0;
+        }
+        @Override
+        public void setMuerte(int muerte) {
+            this.muertePropertie = muerte;
+        }
+    };
+    private IndividuoModelProperties modeloParaGUICompartidoIndividuo = new IndividuoModelProperties(parametrosDataIndividuo);
+    private RecursosModelProperties modeloParaGUICompartidoRecursos = new RecursosModelProperties(parameterDataRecursos);
 
 
     @FXML
@@ -34,7 +61,7 @@ public class Controller{
             stage.setTitle("Configuración:");
             stage.setScene(scene);
             NewGameController c = fxmlLoader.getController();
-            c.loadUserData(modeloParaGUICompartido);
+            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoRecursos);
             c.setStage(stage);
             stage.show();
         }catch (Exception e){
@@ -49,7 +76,7 @@ public class Controller{
             stage.setTitle("Cargar Partida");
             stage.setScene(scene);
             NewGameController c = fxmlLoader.getController();
-            c.loadUserData(modeloParaGUICompartido);
+            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoRecursos);
             c.setStage(stage);
             stage.show();
         }catch (Exception e){

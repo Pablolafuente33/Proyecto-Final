@@ -10,7 +10,7 @@ public class NodoLE<T> {
     public NodoLE<T> getSiguiente() {
         return siguiente;
     }
-    public void insertarmeEn(NodoLE<T> siguiente) {
+    public void setSiguiente(NodoLE<T> siguiente) {
         this.siguiente = siguiente;
     }
     public Object getDato() {
