@@ -1,15 +1,15 @@
 package EstructurasDeDatos;
 
-public class NodoLS {
-    private Object object;
-    public NodoLS(Object object){
+public class NodoLS<T> {
+    private T object;
+    public NodoLS(T object){
         this.object = object;
     }
 
-    public Object getObject() {
+    public T getObject() {
         return object;
     }
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 }
