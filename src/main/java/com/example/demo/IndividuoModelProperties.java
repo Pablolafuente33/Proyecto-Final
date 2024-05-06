@@ -2,19 +2,22 @@ package com.example.demo;
 
 import javafx.beans.property.*;
 
-public class ParameterDataModelProperties {
+public class IndividuoModelProperties {
     protected Individuo individuoOriginal;
+
     protected IntegerProperty vida = new SimpleIntegerProperty();
     protected IntegerProperty probabilidadReproduccion = new SimpleIntegerProperty();
     protected IntegerProperty probabilidadMuerte = new SimpleIntegerProperty();
     protected IntegerProperty probabilidadClonacion = new SimpleIntegerProperty();
-    protected StringProperty nombre = new SimpleStringProperty();
-    public ParameterDataModelProperties (Individuo individuoOriginal){
+
+
+    public IndividuoModelProperties(Individuo individuoOriginal){
         setIndividuoOriginal(individuoOriginal);
     }
     public void setIndividuoOriginal(Individuo IndividuoOriginal) {
         this.individuoOriginal = individuoOriginal;
     }
+
     public void commit(){
         individuoOriginal.setVida(vida.get());
         individuoOriginal.setProbabilidadClonacion(probabilidadClonacion.get());
@@ -27,6 +30,7 @@ public class ParameterDataModelProperties {
         probabilidadClonacion.set(individuoOriginal.getProbabilidadClonacion());
         probabilidadMuerte.set(individuoOriginal.getProbabilidadMuerte());
     }
+
     public void setVida(int vida) {
         this.vida.set(vida);
     }
@@ -36,18 +40,13 @@ public class ParameterDataModelProperties {
     public void setProbabilidadMuerte(int probabilidadReproduccion){
         this.probabilidadMuerte.set(probabilidadReproduccion);
     }
-
     public void setProbabilidadClonacion(int probabilidadClonacion) {
         this.probabilidadClonacion.set(probabilidadClonacion);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre.set(nombre);
-    }
-    public Property<Number> vidaProperty(){return vida;}
-    public Property<Number> probabilidadReproduccionProperty(){return probabilidadReproduccion;}
-    public Property<Number> probabilidadMuerteProperty(){return probabilidadMuerte;}
-    public Property<Number> probabilidadClonacionProperty(){return probabilidadClonacion;}
-    public Property<String> nombreProperty(){return nombre;}
+    public Property<Number> vidaIndividuoProperty(){return vida;}
+    public Property<Number> probabilidadIndividuoReproduccionProperty(){return probabilidadReproduccion;}
+    public Property<Number> probabilidadIndividuoMuerteProperty(){return probabilidadMuerte;}
+    public Property<Number> probabilidadIndividuoClonacionProperty(){return probabilidadClonacion;}
 
 }

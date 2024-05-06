@@ -6,7 +6,7 @@ public class Individuo {
     private int Vida;
     private int probabilidadReproduccion;
     private int probabilidadClonacion;
-    private int probabilidadMuerte = 100 - probabilidadReproduccion;
+    private int probabilidadMuerte;
     private String tipo;
 
     public Individuo(int id, int generacion, int turnosVida, int probabilidadReproduccion, int probabilidadClonacion, String tipo) {

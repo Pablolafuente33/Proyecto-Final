@@ -39,7 +39,7 @@
                                  </font></Label>
                               <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                  <children>
-                                    <Slider fx:id="vidaSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Slider fx:id="vidaIndividuoSlider" min="50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
                                     <Label fx:id="sliderVidaValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>
@@ -50,7 +50,7 @@
                               </Label>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                  <children>
-                                    <Slider fx:id="reproduccionSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Slider fx:id="reproduccionIndividuoSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
                                     <Label fx:id="sliderReproduccionValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>
@@ -61,7 +61,7 @@
                               </Label>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                  <children>
-                                    <Slider fx:id="muerteSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Slider fx:id="muerteIndividuoSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
                                     <Label fx:id="sliderMuerteValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>
@@ -72,7 +72,7 @@
                               </Label>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                  <children>
-                                    <Slider fx:id="clonacionSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Slider fx:id="clonacionIndividuoSlider" majorTickUnit="100.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
                                     <Label fx:id="sliderClonacionValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>
@@ -87,7 +87,361 @@
           </Tab>
             <Tab text="Recursos">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="14.0" layoutY="14.0" prefHeight="338.0" prefWidth="444.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Agua">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                        <children>
+                                            <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                <children>
+                                                    <Label text="Turnos de Vida">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font></Label>
+                                                    <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="vidaRecursosSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="reproduccionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                </children>
+                                            </VBox>
+                                            <Label alignment="CENTER" layoutX="56.0" layoutY="14.0" text="Configure las caracteristicas iniciales del agua:">
+                                                <font>
+                                                    <Font name="Centaur" size="20.0" />
+                                                </font></Label>
+                                        </children></AnchorPane>
+                                </content>
+                            </Tab>
+                            <Tab text="Comida">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                        <children>
+                                            <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                <children>
+                                                    <Label text="Turnos de Vida">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font></Label>
+                                                    <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="vidaRecursosSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="reproduccionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                    <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                        <font>
+                                                            <Font name="Centaur" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                        <children>
+                                                            <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                        </children>
+                                                    </HBox>
+                                                </children>
+                                            </VBox>
+                                            <Label alignment="CENTER" layoutX="40.0" layoutY="14.0" text="Configure las caracteristicas iniciales de la comida:">
+                                                <font>
+                                                    <Font name="Centaur" size="20.0" />
+                                                </font></Label>
+                                        </children></AnchorPane>
+                                </content>
+                            </Tab>
+                              <Tab text="Montaña">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                  <children>
+                                                      <Label text="Turnos de Vida">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font></Label>
+                                                      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="vidaRecursosSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="reproduccionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                  </children>
+                                              </VBox>
+                                              <Label alignment="CENTER" layoutX="39.0" layoutY="14.0" text="Configure las caracteristicas iniciales de las montañas :">
+                                                  <font>
+                                                      <Font name="Centaur" size="20.0" />
+                                                  </font></Label>
+                                          </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Tesoro">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                  <children>
+                                                      <Label text="Turnos de Vida">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font></Label>
+                                                      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="vidaRecursosSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="reproduccionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" minorTickCount="50" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                  </children>
+                                              </VBox>
+                                              <Label alignment="CENTER" layoutX="38.0" layoutY="14.0" text="Configure las caracteristicas iniciales del los tesoros:">
+                                                  <font>
+                                                      <Font name="Centaur" size="20.0" />
+                                                  </font></Label>
+                                          </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Biblioteca">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                  <children>
+                                                      <Label text="Turnos de Vida">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font></Label>
+                                                      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="vidaRecursosSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="reproduccionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                  </children>
+                                              </VBox>
+                                              <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Configure las caracteristicas iniciales de las bibliotecas:">
+                                                  <font>
+                                                      <Font name="Centaur" size="20.0" />
+                                                  </font></Label>
+                                          </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab text="Pozo">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                          <children>
+                                              <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="45.0" prefHeight="300.0" prefWidth="388.0">
+                                                  <children>
+                                                      <Label text="Turnos de Vida">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font></Label>
+                                                      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="vidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="reproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="muerteRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                      <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
+                                                          <font>
+                                                              <Font name="Centaur" size="18.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                                          <children>
+                                                              <Slider fx:id="clonacionRecursosSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                          </children>
+                                                      </HBox>
+                                                  </children>
+                                              </VBox>
+                                              <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Configure las caracteristicas iniciales de los pozos:">
+                                                  <font>
+                                                      <Font name="Centaur" size="20.0" />
+                                                  </font></Label>
+                                          </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
               </content>
             </Tab>
             <Tab text="Untitled Tab">

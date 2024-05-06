@@ -29,13 +29,13 @@ public class ListaEnlazada <T>{
         if (primero == null){
             this. primero = nodo;
         }else {
-            getUltimo().insertarmeEn(nodo);
+            getUltimo().setSiguiente(nodo);
         }
     }
     public void insert (T dato, int pos){
         NodoLE<T> nodo = new NodoLE<>(dato);
         if (pos == 0){
-            nodo.insertarmeEn(primero);
+            nodo.setSiguiente(primero);
             primero = nodo;
         } else{
             int i = 0;
@@ -47,8 +47,8 @@ public class ListaEnlazada <T>{
                i++;
             }
             if (i == pos){
-                anterior.insertarmeEn(nodo);
-                nodo.insertarmeEn(actual);
+                anterior.setSiguiente(nodo);
+                nodo.setSiguiente(actual);
             }else {
                 throw new IndexOutOfBoundsException("Posicion fuera de rango");
             }
