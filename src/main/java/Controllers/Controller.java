@@ -1,6 +1,7 @@
-package com.example.demo;
+package Controllers;
 
 import Recursos_Juego.Recurso;
+import com.example.demo.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

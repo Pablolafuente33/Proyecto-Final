@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
    <children>
       <Label text="Label" textAlignment="CENTER" textFill="#1c19f7" />
    </children>

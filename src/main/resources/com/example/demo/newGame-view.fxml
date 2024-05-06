@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="489.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.NewGameController">
+<AnchorPane prefHeight="489.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewGameController">
 <children>
    <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Atrás" />
       <TabPane layoutX="68.0" layoutY="62.0" prefHeight="398.0" prefWidth="469.0" tabClosingPolicy="UNAVAILABLE">

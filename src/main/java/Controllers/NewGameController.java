@@ -1,5 +1,7 @@
-package com.example.demo;
+package Controllers;
 
+import com.example.demo.IndividuoModelProperties;
+import com.example.demo.RecursosModelProperties;
 import javafx.beans.property.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -71,8 +73,12 @@ public class NewGameController implements Initializable{
         vidaIndividuoSlider.valueProperty().bindBidirectional(medidaIndividuoVida);
         sliderVidaValue.textProperty().bind(medidaIndividuoVida.asString());
 
-        reproduccionIndividuoSlider.valueProperty().bindBidirectional(medidaIndividuoReproduccion);
+        reproduccionIndividuoSlider.valueProperty().bindBidirectional((Property<Number>) medidaIndividuoReproduccion);
         sliderReproduccionValue.textProperty().bind(medidaIndividuoReproduccion.asString());
+        medidaIndividuoMuerte.addListener((obs, oldValue, newValue) -> {
+            // Actualizar medidaMuerte cuando medidaReproduccion cambia
+            medidaIndividuoReproduccion.set(100 - newValue.intValue());
+        });
 
         muerteIndividuoSlider.valueProperty().bindBidirectional((Property<Number>) medidaIndividuoMuerte);
         sliderMuerteValue.textProperty().bind(medidaIndividuoMuerte.asString());
