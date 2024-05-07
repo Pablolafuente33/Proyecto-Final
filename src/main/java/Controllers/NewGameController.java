@@ -162,27 +162,27 @@ public class NewGameController implements Initializable{
     protected IntegerProperty medidaIndividuoVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaIndividuoReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaIndividuoMuerte = new SimpleIntegerProperty(100);
-    protected IntegerProperty medidaIndividuoClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaIndividuoClonacion = new SimpleIntegerProperty(0);
     //Recursos
     protected IntegerProperty medidaAguaVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaAguaReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaAguaMuerte = new SimpleIntegerProperty(0);
-    protected IntegerProperty medidaAguaClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaAguaClonacion = new SimpleIntegerProperty(0);
 
     protected IntegerProperty medidaBibliotecaVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaBibliotecaReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaBibliotecaMuerte = new SimpleIntegerProperty(0);
-    protected IntegerProperty medidaBibliotecaClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaBibliotecaClonacion = new SimpleIntegerProperty(0);
 
     protected IntegerProperty medidaComidaVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaComidaReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaComidaMuerte = new SimpleIntegerProperty(0);
-    protected IntegerProperty medidaComidaClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaComidaClonacion = new SimpleIntegerProperty(0);
 
     protected IntegerProperty medidaMontañaVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaMontañaReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaMontañaMuerte = new SimpleIntegerProperty(0);
-    protected IntegerProperty medidaMontañaClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaMontañaClonacion = new SimpleIntegerProperty(0);
 
     protected IntegerProperty medidaPozoVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaPozoReproduccion = new SimpleIntegerProperty(0);
@@ -192,7 +192,7 @@ public class NewGameController implements Initializable{
     protected IntegerProperty medidaTesoroVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaTesoroReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaTesoroMuerte = new SimpleIntegerProperty(0);
-    protected IntegerProperty medidaTesoroClonacion = new SimpleIntegerProperty();
+    protected IntegerProperty medidaTesoroClonacion = new SimpleIntegerProperty(0);
 
     @Override
     public void initialize(URL url, ResourceBundle resources){
@@ -216,123 +216,127 @@ public class NewGameController implements Initializable{
 
         clonacionIndividuoSlider.valueProperty().bindBidirectional(medidaIndividuoClonacion);
         individuoClonacionValue.textProperty().bind(medidaIndividuoClonacion.asString());
-        /**Recursos:**/
+
         //**Agua**//
         aguaVidaSlider.valueProperty().bindBidirectional(medidaAguaVida);
         aguaVidaValue.textProperty().bind(medidaAguaVida.asString());
 
-        aguaReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaAguaReproduccion);
+        aguaReproduccionSlider.valueProperty().bindBidirectional( medidaAguaReproduccion);
         aguaReproduccionValue.textProperty().bind(medidaAguaReproduccion.asString());
         medidaAguaMuerte.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaAguaReproduccion.set(  newValue.intValue());
+            medidaAguaReproduccion.set( 0 - newValue.intValue());
         });
 
-        aguaReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaAguaMuerte);
+        aguaMuerteSlider.valueProperty().bindBidirectional( medidaAguaMuerte);
         aguaMuerteValue.textProperty().bind(medidaAguaMuerte.asString());
         medidaAguaReproduccion.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaAguaMuerte.set( 50 - newValue.intValue());
+            medidaAguaMuerte.set( 0 - newValue.intValue());
         });
 
         aguaClonacionSlider.valueProperty().bindBidirectional(medidaAguaClonacion);
         aguaClonacionValue.textProperty().bind(medidaAguaClonacion.asString());
+
         //**Biblioteca**//
         bibliotecaVidaSlider.valueProperty().bindBidirectional(medidaBibliotecaVida);
         bibliotecaVidaValue.textProperty().bind(medidaBibliotecaVida.asString());
 
-        bibliotecaReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaBibliotecaReproduccion);
+        bibliotecaReproduccionSlider.valueProperty().bindBidirectional( medidaBibliotecaReproduccion);
         bibliotecaReproduccionValue.textProperty().bind(medidaBibliotecaReproduccion.asString());
+        medidaBibliotecaMuerte.addListener((obs, oldValue, newValue) -> {
+            medidaBibliotecaReproduccion.set( 0 - newValue.intValue());
+        });
+
+        bibliotecaMuerteSlider.valueProperty().bindBidirectional( medidaBibliotecaMuerte);
+        bibliotecaMuerteValue.textProperty().bind(medidaBibliotecaMuerte.asString());
         medidaBibliotecaReproduccion.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaBibliotecaMuerte.set( newValue.intValue());
+            medidaBibliotecaMuerte.set( 0 - newValue.intValue());
         });
 
-        bibliotecaMuerteSlider.valueProperty().bindBidirectional((Property<Number>) medidaBibliotecaMuerte);
-        bibliotecaMuerteValue.textProperty().bind(medidaBibliotecaMuerte.asString());
-        medidaBibliotecaMuerte.addListener((obs, oldValue, newValue) -> {
-            // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaBibliotecaReproduccion.set( - newValue.intValue());
-        });
-
-        bibliotecaMuerteSlider.valueProperty().bindBidirectional(medidaBibliotecaClonacion);
+        bibliotecaClonacionSlider.valueProperty().bindBidirectional(medidaBibliotecaClonacion);
         bibliotecaClonacionValue.textProperty().bind(medidaBibliotecaClonacion.asString());
+
         //**Comida**//
         comidaVidaSlider.valueProperty().bindBidirectional(medidaComidaVida);
         comidaVidaValue.textProperty().bind(medidaComidaVida.asString());
 
-        comidaReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaComidaReproduccion);
+        comidaReproduccionSlider.valueProperty().bindBidirectional( medidaComidaReproduccion);
         comidaReproduccionValue.textProperty().bind(medidaComidaReproduccion.asString());
-        medidaComidaReproduccion.addListener((obs, oldValue, newValue) -> {
-            // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaComidaMuerte.set( - newValue.intValue());
-        });
-
-        comidaMuerteSlider.valueProperty().bindBidirectional((Property<Number>) medidaComidaMuerte);
-        comidaMuerteValue.textProperty().bind(medidaComidaMuerte.asString());
         medidaComidaMuerte.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaComidaReproduccion.set( - newValue.intValue());
+            medidaComidaReproduccion.set( 0 - newValue.intValue());
+        });
+
+        comidaMuerteSlider.valueProperty().bindBidirectional( medidaComidaMuerte);
+        comidaMuerteValue.textProperty().bind(medidaComidaMuerte.asString());
+        medidaComidaReproduccion.addListener((obs, oldValue, newValue) -> {
+            // Actualizar medidaMuerte cuando medidaReproduccion cambia
+            medidaComidaMuerte.set( 0 - newValue.intValue());
         });
 
         comidaClonacionSlider.valueProperty().bindBidirectional(medidaComidaClonacion);
         comidaClonacionValue.textProperty().bind(medidaComidaClonacion.asString());
+
         //**Montaña**//
         montañaVidaSlider.valueProperty().bindBidirectional(medidaMontañaVida);
         montañaVidaValue.textProperty().bind(medidaMontañaVida.asString());
 
-        montañaReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaMontañaReproduccion);
+        montañaReproduccionSlider.valueProperty().bindBidirectional( medidaMontañaReproduccion);
         montañaReproduccionValue.textProperty().bind(medidaMontañaReproduccion.asString());
-        medidaMontañaReproduccion.addListener((obs, oldValue, newValue) -> {
+        medidaMontañaMuerte.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaMontañaMuerte.set( - newValue.intValue());
+            medidaMontañaReproduccion.set( 0 - newValue.intValue());
         });
 
-        montañaMuerteSlider.valueProperty().bindBidirectional((Property<Number>) medidaMontañaMuerte);
+        montañaMuerteSlider.valueProperty().bindBidirectional( medidaMontañaMuerte);
         montañaMuerteValue.textProperty().bind(medidaMontañaMuerte.asString());
-        medidaIndividuoMuerte.addListener((obs, oldValue, newValue) -> {
+        medidaMontañaReproduccion.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaMontañaReproduccion.set( - newValue.intValue());
+            medidaMontañaMuerte.set( 0 - newValue.intValue());
         });
 
         montañaClonacionSlider.valueProperty().bindBidirectional(medidaMontañaClonacion);
         montañaClonacionValue.textProperty().bind(medidaMontañaClonacion.asString());
+
         //**Pozo**//
         pozoVidaSlider.valueProperty().bindBidirectional(medidaPozoVida);
         pozoVidaValue.textProperty().bind(medidaPozoVida.asString());
 
-        pozoReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaPozoReproduccion);
+        pozoReproduccionSlider.valueProperty().bindBidirectional( medidaPozoReproduccion);
         pozoReproduccionValue.textProperty().bind(medidaPozoReproduccion.asString());
-        medidaPozoReproduccion.addListener((obs, oldValue, newValue) -> {
-            // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaPozoMuerte.set( - newValue.intValue());
-        });
-
-        pozoMuerteSlider.valueProperty().bindBidirectional((Property<Number>) medidaPozoMuerte);
-        pozoMuerteValue.textProperty().bind(medidaPozoMuerte.asString());
         medidaPozoMuerte.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaPozoReproduccion.set( - newValue.intValue());
+            medidaPozoReproduccion.set( 0 - newValue.intValue());
+        });
+
+        pozoMuerteSlider.valueProperty().bindBidirectional( medidaPozoMuerte);
+        pozoMuerteValue.textProperty().bind(medidaPozoMuerte.asString());
+        medidaPozoReproduccion.addListener((obs, oldValue, newValue) -> {
+            // Actualizar medidaMuerte cuando medidaReproduccion cambia
+            medidaPozoMuerte.set( 0 - newValue.intValue());
         });
 
         pozoClonacionSlider.valueProperty().bindBidirectional(medidaPozoClonacion);
         pozoClonacionValue.textProperty().bind(medidaPozoClonacion.asString());
+
         //**Tesoro**//
         tesoroVidaSlider.valueProperty().bindBidirectional(medidaTesoroVida);
         tesoroVidaValue.textProperty().bind(medidaTesoroVida.asString());
 
-        tesoroReproduccionSlider.valueProperty().bindBidirectional((Property<Number>) medidaTesoroReproduccion);
+        tesoroReproduccionSlider.valueProperty().bindBidirectional( medidaTesoroReproduccion);
         tesoroReproduccionValue.textProperty().bind(medidaTesoroReproduccion.asString());
-        medidaTesoroReproduccion.addListener((obs, oldValue, newValue) -> {
+        medidaTesoroMuerte.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaTesoroMuerte.set( - newValue.intValue());
+            medidaTesoroReproduccion.set( 0 - newValue.intValue());
         });
 
-        tesoroMuerteSlider.valueProperty().bindBidirectional((Property<Number>) medidaTesoroMuerte);
+        tesoroMuerteSlider.valueProperty().bindBidirectional( medidaTesoroMuerte);
         tesoroMuerteValue.textProperty().bind(medidaTesoroMuerte.asString());
         medidaTesoroReproduccion.addListener((obs, oldValue, newValue) -> {
             // Actualizar medidaMuerte cuando medidaReproduccion cambia
-            medidaTesoroMuerte.set( - newValue.intValue());
+            medidaTesoroMuerte.set( 0 - newValue.intValue());
         });
 
         tesoroClonacionSlider.valueProperty().bindBidirectional(medidaTesoroClonacion);
@@ -379,14 +383,15 @@ public class NewGameController implements Initializable{
         tesoroMuerteSlider.valueProperty().bindBidirectional(tesoroModel.muerteRecursoProperty());
         tesoroClonacionSlider.valueProperty().bindBidirectional(tesoroModel.clonacionRecursoProperty());
     }
-    public void loadUserData(IndividuoModelProperties individuoModel, RecursosModelProperties recursoModel){
+    public void loadUserData(IndividuoModelProperties individuoModel, RecursosModelProperties aguaModel, RecursosModelProperties bibliotecaModel,RecursosModelProperties comidaModel,
+                             RecursosModelProperties montañaModel, RecursosModelProperties pozoModel, RecursosModelProperties tesoroModel){
         this.individuoModel = individuoModel;
-        this.aguaModel = recursoModel;
-        this.bibliotecaModel = recursoModel;
-        this.comidaModel = recursoModel;
-        this.montañaModel = recursoModel;
-        this.pozoModel = recursoModel;
-        this.tesoroModel = recursoModel;
+        this.aguaModel =aguaModel;
+        this.bibliotecaModel = bibliotecaModel;
+        this.comidaModel = comidaModel;
+        this.montañaModel = montañaModel;
+        this.pozoModel = pozoModel;
+        this.tesoroModel = tesoroModel;
 
         this.updateGUIWithModel();
     }
