@@ -7,18 +7,22 @@
     <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 9">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
 =======
       <change beforePath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/RecursosModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/RecursosModelProperties.java" afterDir="false" />
+>>>>>>> Pablo-branch
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" afterDir="false" />
 >>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
+=======
+>>>>>>> Pablo-branch
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" root0="FORCE_HIGHLIGHTING" />
@@ -124,8 +129,52 @@
     "settings.editor.selected.configurable": "preferences.keymap",
 >>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main_Pruebas.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Class&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.ListaEnlazadaTest.add.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ListaEnlazadaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ListaEnlazadaTest.getPrimero.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ListaEnlazadaTest.getUltimo.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ListaEnlazadaTest.isVacia.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ListaSimpleTest.add.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ListaSimpleTest.getNumeroElementos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NodoLETest.getDato.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NodoLETest.getSiguiente.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NodoLETest.insertarmeEn.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.NodoLETest.setDato.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PilaTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PilaTest.pop.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.PilaTest.push.executor&quot;: &quot;Coverage&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pablo-branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/Documents/ESTRUCTURADATOS/juego-de-la-vida&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> Pablo-branch
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -274,7 +323,12 @@
       <workItem from="1714905814975" duration="183000" />
       <workItem from="1715000770021" duration="5529000" />
       <workItem from="1715009903200" duration="1719000" />
+<<<<<<< HEAD
 >>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
+=======
+      <workItem from="1715017544651" duration="7718000" />
+      <workItem from="1715074848144" duration="7608000" />
+>>>>>>> Pablo-branch
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
