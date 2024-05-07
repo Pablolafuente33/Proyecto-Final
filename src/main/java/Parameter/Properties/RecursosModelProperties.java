@@ -45,7 +45,7 @@ public class RecursosModelProperties {
     }
 
     public Property<Number> vidaRecursoProperty(){return vida;}
-    public Property<Number> probabilidadRecursoReproduccionProperty(){return probabilidadReproduccion;}
-    public Property<Number> probabilidadRecursoMuerteProperty(){return probabilidadMuerte;}
-    public Property<Number> probabilidadRecursoClonacionProperty(){return probabilidadClonacion;}
+    public Property<Number> reproduccionRecursoProperty(){return probabilidadReproduccion;}
+    public Property<Number> muerteRecursoProperty(){return probabilidadMuerte;}
+    public Property<Number> clonacionRecursoProperty(){return probabilidadClonacion;}
 }

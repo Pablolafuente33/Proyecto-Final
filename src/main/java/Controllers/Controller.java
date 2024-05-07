@@ -1,5 +1,7 @@
 package Controllers;
 
+import Parameter.Properties.IndividuoModelProperties;
+import Parameter.Properties.RecursosModelProperties;
 import Recursos_Juego.Recurso;
 import com.example.demo.*;
 import javafx.fxml.FXML;
