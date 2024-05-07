@@ -1,2 +1,4 @@
-package Parameter.Properties;public class AguaModelProperties {
+package Parameter.Properties;
+
+public class AguaModelProperties {
 }
