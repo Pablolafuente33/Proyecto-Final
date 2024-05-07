@@ -14,4 +14,6 @@ module com.example.demo {
     opens Tablero to javafx.fxml;
     exports Controllers;
     opens Controllers to javafx.fxml;
+    exports Parameter.Properties;
+    opens Parameter.Properties to javafx.fxml;
 }

@@ -103,8 +103,8 @@
                                                         </font></Label>
                                                     <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="aguaVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="aguaVidaValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -114,8 +114,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="aguaReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="aguaReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -125,8 +125,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="aguaMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="aguaMuerteValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -136,8 +136,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="aguaClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="aguaClonacionValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                 </children>
@@ -161,8 +161,8 @@
                                                         </font></Label>
                                                     <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="comidaVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="comidaVidaValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -172,8 +172,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="comidaReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="comidaReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -183,8 +183,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="comidaMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="comidaMuerteValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                     <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -194,8 +194,8 @@
                                                     </Label>
                                                     <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                         <children>
-                                                            <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                            <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                            <Slider fx:id="comidaClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                            <Label fx:id="comidaClonacionValue" contentDisplay="RIGHT" text="--" />
                                                         </children>
                                                     </HBox>
                                                 </children>
@@ -219,8 +219,8 @@
                                                           </font></Label>
                                                       <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="montañaVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="montañaVidaValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -230,8 +230,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="montañaReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="montañaReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -241,8 +241,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="montañaMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="montañaMuerteValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -252,8 +252,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="montañaClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="montañaClonacionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                   </children>
@@ -277,8 +277,8 @@
                                                           </font></Label>
                                                       <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="tesoroVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="tesoroVidaValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -288,8 +288,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" minorTickCount="50" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="tesoroReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" minorTickCount="50" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="tesoroReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -299,8 +299,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="tesoroMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="tesoroMuerteValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -310,8 +310,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="tesoroClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="tesoroClonacionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                   </children>
@@ -335,8 +335,8 @@
                                                           </font></Label>
                                                       <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="bibliotecaVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="bibliotecaVidaValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -346,8 +346,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="bibliotecaReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="bibliotecaReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -357,8 +357,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="bibliotecaMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="bibliotecaMuerteValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -368,8 +368,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="bibliotecaClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="bibliotecaClonacionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                   </children>
@@ -393,8 +393,8 @@
                                                           </font></Label>
                                                       <HBox alignment="CENTER" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoVidaValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="pozoVidaSlider" majorTickUnit="10.0" max="10.0" min="-10.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="pozoVidaValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="151.0" layoutY="10.0" text="\% de reproducción">
@@ -404,8 +404,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoReproduccionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="pozoReproduccionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="pozoReproduccionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="141.0" layoutY="65.0" text="\% de muerte">
@@ -415,8 +415,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="32.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoMuerteValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="pozoMuerteSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="pozoMuerteValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                       <Label layoutX="162.0" layoutY="120.0" text="\% de clonación">
@@ -426,8 +426,8 @@
                                                       </Label>
                                                       <HBox alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                                           <children>
-                                                              <Slider fx:id="recursoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
-                                                              <Label fx:id="recursoClonacionValue" contentDisplay="RIGHT" text="--" />
+                                                              <Slider fx:id="pozoClonacionSlider" majorTickUnit="50.0" max="50.0" min="-50.0" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                                              <Label fx:id="pozoClonacionValue" contentDisplay="RIGHT" text="--" />
                                                           </children>
                                                       </HBox>
                                                   </children>

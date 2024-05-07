@@ -1,4 +1,4 @@
-package com.example.demo;
+package Parameter.Properties;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.Property;
