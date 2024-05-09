@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.Image;
+
 public class Individuo {
     private int id;
     private int generacion;
@@ -8,6 +11,7 @@ public class Individuo {
     private int probabilidadClonacion;
     private int probabilidadMuerte;
     private String tipo;
+    private Movimiento movimiento;
 
     public Individuo(int id, int generacion, int turnosVida, int probabilidadReproduccion, int probabilidadClonacion, String tipo) {
         this.id = id;
@@ -68,6 +72,9 @@ public class Individuo {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+    public void pintar(GraphicsContext graficos){
+        graficos.drawImage(new Image(), movimiento.);
     }
 }
 
