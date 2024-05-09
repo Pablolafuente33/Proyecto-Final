@@ -2,7 +2,7 @@ package EstructurasDeDatos;
 
 import java.util.Iterator;
 
-public class ListaSimple<T> {
+public class ListaSimple<T>{
     private NodoLS[] elemento;
     private int max = 100;
     public ListaSimple(){
@@ -65,21 +65,17 @@ public class ListaSimple<T> {
         }
     }
 
-    @Override
     public Iterator<T> iterator() {
         int size = this.getNumeroElementos();
         Iterator<T> iterator = new Iterator<>() {
             private int pos = 0;
-            @Override
             public boolean hasNext() {
                 return pos < size && elemento[pos] != null;
             }
-            @Override
             public T next() {
                 return (T) elemento[pos++];
                 //Puede dar error
             }
-            @Override
             public void remove() {
                 throw new UnsupportedOperationException();
             }
