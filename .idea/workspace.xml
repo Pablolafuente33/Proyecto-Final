@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/AguaModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Main_Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Main_Pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Movimiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +249,10 @@
       <workItem from="1715017544651" duration="7352000" />
       <workItem from="1715114052812" duration="967000" />
       <workItem from="1715120661763" duration="199000" />
-      <workItem from="1715263603677" duration="1800000" />
+      <workItem from="1715263603677" duration="4993000" />
+      <workItem from="1715336423876" duration="7330000" />
+      <workItem from="1715351534405" duration="106000" />
+      <workItem from="1715351778924" duration="4278000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />

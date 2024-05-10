@@ -74,7 +74,7 @@ public class Individuo {
         this.tipo = tipo;
     }
     public void pintar(GraphicsContext graficos){
-        graficos.drawImage(new Image(), movimiento.);
+        ;
     }
 }
 

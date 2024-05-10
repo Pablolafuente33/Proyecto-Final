@@ -15,7 +15,6 @@ public class Main_Pruebas {
                 double  tiempo = (tiempoActual - tiempoInicial)/1000000000;
                 System.out.println(tiempo);
                 actualizarEstado();
-                pintar();
             }
         };
         animationTimer.start();//En esta linea comienza el ciclo de juego

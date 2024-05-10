@@ -2,13 +2,18 @@ package Controllers;
 
 import Parameter.Properties.IndividuoModelProperties;
 import Parameter.Properties.RecursosModelProperties;
+import Parameter.Properties.TableroModelProperties;
 import javafx.beans.property.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TabPane;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
+import javafx.scene.layout.Pane;
 
 import  java.net.URL;
 import java.util.ResourceBundle;
@@ -80,6 +85,11 @@ public class NewGameController implements Initializable{
     protected Slider tesoroMuerteSlider;
     @FXML
     protected Slider tesoroClonacionSlider;
+    //Tablero
+    @FXML
+    protected Slider columnasSlider;
+    @FXML
+    protected Slider filasSlider;
 
     /**Labels de los Sliders**/
     //Individuos
@@ -146,16 +156,20 @@ public class NewGameController implements Initializable{
     @FXML
     protected Label tesoroClonacionValue;
 
+    /**Tablero**/
+    @FXML
+    protected GridPane tablero;
+
     /**Models**/
     private Stage stage;
     private IndividuoModelProperties individuoModel;
-    private RecursosModelProperties recursoModel;
     private RecursosModelProperties aguaModel;
     private RecursosModelProperties bibliotecaModel;
     private RecursosModelProperties comidaModel;
     private RecursosModelProperties montañaModel;
     private RecursosModelProperties pozoModel;
     private RecursosModelProperties tesoroModel;
+    private TableroModelProperties tableroModel;
 
     /** Medidas **/
     //Individuo
@@ -193,6 +207,11 @@ public class NewGameController implements Initializable{
     protected IntegerProperty medidaTesoroReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaTesoroMuerte = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaTesoroClonacion = new SimpleIntegerProperty(0);
+
+    //Tablero
+    protected IntegerProperty medidaFilas = new SimpleIntegerProperty(0);
+    protected IntegerProperty medidaColumnas = new SimpleIntegerProperty(0);
+
 
     @Override
     public void initialize(URL url, ResourceBundle resources){
@@ -341,6 +360,12 @@ public class NewGameController implements Initializable{
 
         tesoroClonacionSlider.valueProperty().bindBidirectional(medidaTesoroClonacion);
         tesoroClonacionValue.textProperty().bind(medidaTesoroClonacion.asString());
+        //Tablero
+        filasSlider.valueProperty().bindBidirectional(medidaFilas);
+        medidaFilas.addListener((obs, oldValue, newValue) -> tableroParametrizable());
+
+        columnasSlider.valueProperty().bindBidirectional(medidaColumnas);
+        medidaColumnas.addListener((obs, oldValue, newValue) -> tableroParametrizable());
     }
     public void setStage(Stage stage) {
         this.stage = stage;
@@ -382,9 +407,12 @@ public class NewGameController implements Initializable{
         tesoroReproduccionSlider.valueProperty().bindBidirectional(tesoroModel.reproduccionRecursoProperty());
         tesoroMuerteSlider.valueProperty().bindBidirectional(tesoroModel.muerteRecursoProperty());
         tesoroClonacionSlider.valueProperty().bindBidirectional(tesoroModel.clonacionRecursoProperty());
+        /**Tablero**/
+        filasSlider.valueProperty().bindBidirectional(tableroModel.filasProperty());
+        columnasSlider.valueProperty().bindBidirectional(tableroModel.columnasProperty());
     }
     public void loadUserData(IndividuoModelProperties individuoModel, RecursosModelProperties aguaModel, RecursosModelProperties bibliotecaModel,RecursosModelProperties comidaModel,
-                             RecursosModelProperties montañaModel, RecursosModelProperties pozoModel, RecursosModelProperties tesoroModel){
+                             RecursosModelProperties montañaModel, RecursosModelProperties pozoModel, RecursosModelProperties tesoroModel, TableroModelProperties tableroModel){
         this.individuoModel = individuoModel;
         this.aguaModel =aguaModel;
         this.bibliotecaModel = bibliotecaModel;
@@ -392,7 +420,34 @@ public class NewGameController implements Initializable{
         this.montañaModel = montañaModel;
         this.pozoModel = pozoModel;
         this.tesoroModel = tesoroModel;
+        this.tableroModel = tableroModel;
 
         this.updateGUIWithModel();
     }
+    private void tableroParametrizable(){
+        tablero.getChildren().clear();
+        tablero.getRowConstraints().clear();
+        tablero.getColumnConstraints().clear();
+        for (int i = 0; i< medidaFilas.get(); i++) {
+            RowConstraints filas = new RowConstraints();
+            filas.setPercentHeight(100.0 / medidaFilas.get());
+            tablero.getRowConstraints().add(filas);
+        }
+        for(int j = 0; j < medidaColumnas.get(); j ++){
+            ColumnConstraints columnas = new ColumnConstraints();
+            columnas.setPercentWidth(100.0 / medidaColumnas.get());
+            tablero.getColumnConstraints().add(columnas);
+        }
+        for (int i = 0; i<medidaFilas.get();i++){
+            for (int j = 0;j < medidaColumnas.get(); j++){
+                Label label = new Label();
+                label.setStyle("-fx-border-color: black; -fx-alignment: center");
+                label.setPrefHeight(tablero.getPrefHeight());
+                label.setPrefWidth(tablero.getPrefWidth());
+                tablero.add(label, j, i);
+            }
+        }
+    }
+    // Hay que mirar como hacer que el GridPane crezca al reves. De abajo a arriba las filas. Además hay que hacer que no se salga del AnchorPane.
+    //Lo demas bien.
 }
