@@ -64,7 +64,6 @@ public class ListaSimple<T>{
             return i;
         }
     }
-
     public Iterator<T> iterator() {
         int size = this.getNumeroElementos();
         Iterator<T> iterator = new Iterator<>() {
