@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 9">
+    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Tablero, falta que se cuadre bien en la interfaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Main_Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Main_Pruebas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +246,7 @@
       <workItem from="1715336423876" duration="7330000" />
       <workItem from="1715351534405" duration="106000" />
       <workItem from="1715351778924" duration="4278000" />
+      <workItem from="1715382512918" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
@@ -294,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713982142924</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tablero, falta que se cuadre bien en la interfaz">
+      <option name="closed" value="true" />
+      <created>1715382927835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715382927835</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +318,8 @@
     <MESSAGE value="Commit 7" />
     <MESSAGE value="Commit 8" />
     <MESSAGE value="Commit 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 9" />
+    <MESSAGE value="Tablero, falta que se cuadre bien en la interfaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tablero, falta que se cuadre bien en la interfaz" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$PilaTest.ic" NAME="PilaTest Coverage Results" MODIFIED="1712853737873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
