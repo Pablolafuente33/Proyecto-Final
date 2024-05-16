@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="Commit 9">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ebb1ee74-c90c-463a-8aae-36969b5fd010" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/AleatoriedadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/PrintController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/comun/Posicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constantes/Constantes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/individuo/PropertiesNuevosIndividuos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/recurso/Recurso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" afterDir="false" />
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
+      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,65 +66,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.HelloApplication.executor": "Debug",
-    "Application.Main_Pruebas.executor": "Coverage",
+    "Application.SimulacionJuego.executor": "Run",
     "Application.StartApplication.executor": "Run",
-    "DefaultPlantUmlFileTemplate": "UML Class",
-<<<<<<< HEAD
-=======
-    "Downloaded.Files.Path.Enabled": "false",
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
-    "JUnit.ListaEnlazadaTest.add.executor": "Coverage",
-    "JUnit.ListaEnlazadaTest.executor": "Run",
-    "JUnit.ListaEnlazadaTest.getPrimero.executor": "Coverage",
-    "JUnit.ListaEnlazadaTest.getUltimo.executor": "Coverage",
-    "JUnit.ListaEnlazadaTest.isVacia.executor": "Coverage",
-<<<<<<< HEAD
-=======
-    "JUnit.ListaSimpleTest.add.executor": "Coverage",
-    "JUnit.ListaSimpleTest.getNumeroElementos.executor": "Run",
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
-    "JUnit.NodoLETest.getDato.executor": "Coverage",
-    "JUnit.NodoLETest.getSiguiente.executor": "Coverage",
-    "JUnit.NodoLETest.insertarmeEn.executor": "Coverage",
-    "JUnit.NodoLETest.setDato.executor": "Run",
-    "JUnit.PilaTest.executor": "Coverage",
-    "JUnit.PilaTest.pop.executor": "Coverage",
-    "JUnit.PilaTest.push.executor": "Coverage",
-<<<<<<< HEAD
-=======
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Miguel",
     "kotlin-language-version-configured": "true",
-<<<<<<< HEAD
-    "last_opened_file_path": "C:/Users/migue/Desktop/UAH/1º/2º CUATRIMESTRE/METODOLOGÍA DE LA PROGRAMACIÓN/Prácticas/Proyecto-Final",
-=======
-    "last_opened_file_path": "C:/Users/santi/Documents/ESTRUCTURADATOS/Proyecto-Final",
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-<<<<<<< HEAD
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-=======
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -137,13 +91,26 @@
       <recent name="EstructurasDeDatos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StartApplication">
+  <component name="RunManager" selected="Application.SimulacionJuego">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Tablero.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Simulacion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,29 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodoLETest.setDato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.NodoLETest" />
-      <option name="METHOD_NAME" value="setDato" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimulacionJuego" />
         <item itemvalue="Application.StartApplication" />
         <item itemvalue="JUnit.ListaSimpleTest.add" />
         <item itemvalue="JUnit.ListaSimpleTest.getNumeroElementos" />
         <item itemvalue="Application.HelloApplication" />
-        <item itemvalue="JUnit.NodoLETest.setDato" />
       </list>
     </recent_temporary>
   </component>
@@ -255,10 +206,8 @@
       <workItem from="1713516627463" duration="6200000" />
       <workItem from="1713538772337" duration="3820000" />
       <workItem from="1713607060540" duration="7028000" />
-<<<<<<< HEAD
       <workItem from="1713694443935" duration="1065000" />
       <workItem from="1715007160942" duration="777000" />
-=======
       <workItem from="1713694443935" duration="7197000" />
       <workItem from="1713712467682" duration="2870000" />
       <workItem from="1713949402012" duration="19800000" />
@@ -274,7 +223,6 @@
       <workItem from="1714905814975" duration="183000" />
       <workItem from="1715000770021" duration="5529000" />
       <workItem from="1715009903200" duration="1719000" />
->>>>>>> 45fc0de74a7cccb9f755c0bdb64778a0da273966
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <option name="closed" value="true" />
