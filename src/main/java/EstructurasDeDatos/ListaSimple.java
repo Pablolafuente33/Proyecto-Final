@@ -2,12 +2,18 @@ package EstructurasDeDatos;
 
 import java.util.Iterator;
 
-public class ListaSimple<T>{
+public class ListaSimple<T> implements Iterable<T>{
     private NodoLS[] elemento;
     private int max = 100;
+
+    public ListaSimple(int max) {
+        this.max = max;
+    }
+
     public ListaSimple(){
         this.elemento = new NodoLS[max];
     }
+
 
     public NodoLS[] getElemento() {
         return elemento;
@@ -31,6 +37,18 @@ public class ListaSimple<T>{
             elemento[i] = null;
             i++;
         }
+    }
+    public T get(int index) {
+        if (index < 0 || index >= getNumeroElementos()) {
+            throw new IndexOutOfBoundsException("Índice fuera de los límites de la lista");
+        }
+        return (T) elemento[index].getObject();
+    }
+    public void set(int index, T value) {
+        if (index < 0 || index >= getNumeroElementos()) {
+            throw new IndexOutOfBoundsException("Índice fuera de los límites de la lista");
+        }
+        elemento[index] = new NodoLS<>(value);
     }
     public void add(T o){
         int i = 0;
@@ -132,5 +150,25 @@ public class ListaSimple<T>{
         }
         return false;
     }
-
+    public void addAll(ListaSimple<T> otraLista) {
+        Iterator<T> iterator = otraLista.iterator();
+        while (iterator.hasNext()) {
+            this.add(iterator.next());
+        }
+    }
+    public static <T> ListaSimple<T> of(T... elementos) {
+        ListaSimple<T> lista = new ListaSimple<>();
+        for (T elemento : elementos) {
+            lista.add(elemento);
+        }
+        return lista;
+    }
+    public int indexOf(T o) {
+        for (int i = 0; i < getNumeroElementos(); i++) {
+            if (elemento[i] != null && elemento[i].getObject().equals(o)) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
