@@ -4,23 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb1ee74-c90c-463a-8aae-36969b5fd010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/AleatoriedadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/PrintController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/comun/Posicion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/constantes/Constantes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/individuo/PropertiesNuevosIndividuos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/recurso/Recurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/ListaSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Tablero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" root0="FORCE_HIGHLIGHTING" />
@@ -56,30 +40,15 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+        &quot;associatedIndex&quot;: 8
+        }</component>
   <component name="ProjectId" id="2eu6aXkUTx0zmzwQERDF3Zrqg7G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SimulacionJuego.executor": "Run",
-    "Application.StartApplication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Miguel",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -176,7 +145,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -206,8 +176,6 @@
       <workItem from="1713516627463" duration="6200000" />
       <workItem from="1713538772337" duration="3820000" />
       <workItem from="1713607060540" duration="7028000" />
-      <workItem from="1713694443935" duration="1065000" />
-      <workItem from="1715007160942" duration="777000" />
       <workItem from="1713694443935" duration="7197000" />
       <workItem from="1713712467682" duration="2870000" />
       <workItem from="1713949402012" duration="19800000" />

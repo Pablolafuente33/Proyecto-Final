@@ -1,7 +1,11 @@
 package Controllers;
 
-import Recursos_Juego.Recurso;
+import Parameter.Properties.IndividuoModelProperties;
+import Parameter.Properties.RecursosModelProperties;
+import Parameter.Properties.TableroModelProperties;
+import Recursos_Juego.*;
 import com.example.demo.*;
+import Tablero.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,42 +20,24 @@ public class Controller{
      * Propiedades "bindeadas" que permite interconectar elementos visuales.
      */
     private Individuo parametrosDataIndividuo = new Individuo(7,23,43,50,23,"Normal");
-    private Recurso parameterDataRecursos = new Recurso(7, 8, 9, 10) {
-        @Override
-        public void setVida(int vida) {
-            this.vidaPropertie = vida;
-        }
-        @Override
-        public int getVida() {
-            return 0;
-        }
-        @Override
-        public int getClonacion() {
-            return 0;
-        }
-        @Override
-        public void setClonacion(int clonacion) {
-            this.clonacionPropertie = clonacion;
-        }
-        @Override
-        public int getReproduccion() {
-            return 0;
-        }
-        @Override
-        public void setReproduccion(int reproduccion) {
-            this.reproduccionPropertie = reproduccion;
-        }
-        @Override
-        public int getMuerte() {
-            return 0;
-        }
-        @Override
-        public void setMuerte(int muerte) {
-            this.muertePropertie = muerte;
-        }
-    };
+    private Agua parameterDataAgua = new Agua(7, 8, 9, 10);
+    private Biblioteca parameterDataBiblioteca = new Biblioteca(7, 8, 9, 10);
+    private Comida parameterDataComida = new Comida(7, 8, 9, 10);
+    private Montaña parameterDataMontaña = new Montaña(7,8,9,0);
+    private Pozo parameterDataPozo = new Pozo(7, 8, 9, 10);
+    private Tesoro parameterDataTesoro = new Tesoro(7, 8, 9, 10);
+    private Tablero parameterDataTablero = new Tablero(7,7);
+
     private IndividuoModelProperties modeloParaGUICompartidoIndividuo = new IndividuoModelProperties(parametrosDataIndividuo);
-    private RecursosModelProperties modeloParaGUICompartidoRecursos = new RecursosModelProperties(parameterDataRecursos);
+    private RecursosModelProperties modeloParaGUICompartidoAgua = new RecursosModelProperties(parameterDataAgua);
+    private RecursosModelProperties modeloParaGUICompartidoBiblioteca = new RecursosModelProperties(parameterDataBiblioteca);
+    private RecursosModelProperties modeloParaGUICompartidoComida = new RecursosModelProperties(parameterDataComida);
+    private RecursosModelProperties modeloParaGUICompartidoMontaña = new RecursosModelProperties(parameterDataMontaña);
+    private RecursosModelProperties modeloParaGUICompartidoPozo = new RecursosModelProperties(parameterDataPozo);
+    private RecursosModelProperties modeloParaGUICompartidoTesoro = new RecursosModelProperties(parameterDataTesoro);
+
+    private TableroModelProperties  modeloParaGUICompartidoTablero = new TableroModelProperties(parameterDataTablero);
+
 
 
     @FXML
@@ -62,7 +48,8 @@ public class Controller{
             stage.setTitle("Configuración:");
             stage.setScene(scene);
             NewGameController c = fxmlLoader.getController();
-            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoRecursos);
+            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoAgua, modeloParaGUICompartidoBiblioteca,modeloParaGUICompartidoComida, modeloParaGUICompartidoMontaña,
+                    modeloParaGUICompartidoPozo, modeloParaGUICompartidoTesoro, modeloParaGUICompartidoTablero);
             c.setStage(stage);
             stage.show();
         }catch (Exception e){
@@ -77,7 +64,8 @@ public class Controller{
             stage.setTitle("Cargar Partida");
             stage.setScene(scene);
             NewGameController c = fxmlLoader.getController();
-            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoRecursos);
+            c.loadUserData(modeloParaGUICompartidoIndividuo, modeloParaGUICompartidoAgua, modeloParaGUICompartidoBiblioteca,modeloParaGUICompartidoComida, modeloParaGUICompartidoMontaña,
+                    modeloParaGUICompartidoPozo, modeloParaGUICompartidoTesoro, modeloParaGUICompartidoTablero);
             c.setStage(stage);
             stage.show();
         }catch (Exception e){
