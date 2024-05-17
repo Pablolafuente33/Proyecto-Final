@@ -1,5 +1,6 @@
-package com.example.demo;
+package Parameter.Properties;
 
+import com.example.demo.Individuo;
 import javafx.beans.property.*;
 
 public class IndividuoModelProperties {
