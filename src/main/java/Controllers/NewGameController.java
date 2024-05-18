@@ -3,21 +3,29 @@ package Controllers;
 import Parameter.Properties.IndividuoModelProperties;
 import Parameter.Properties.RecursosModelProperties;
 import Parameter.Properties.TableroModelProperties;
-import javafx.beans.property.*;
+import com.example.demo.StartApplication;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.Property;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
-import javafx.scene.layout.Pane;
 
-import  java.net.URL;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
 import java.util.ResourceBundle;
-
 public class NewGameController implements Initializable{
     @FXML
     private TabPane recursos;
@@ -155,6 +163,11 @@ public class NewGameController implements Initializable{
     protected Label tesoroMuerteValue;
     @FXML
     protected Label tesoroClonacionValue;
+
+    @FXML
+    protected Label nameError;
+    @FXML
+    protected TextField nombrePartida;
 
     /**Tablero**/
     @FXML
@@ -428,26 +441,66 @@ public class NewGameController implements Initializable{
         tablero.getChildren().clear();
         tablero.getRowConstraints().clear();
         tablero.getColumnConstraints().clear();
-        for (int i = 0; i< medidaFilas.get(); i++) {
-            RowConstraints filas = new RowConstraints();
-            filas.setPercentHeight(100.0 / medidaFilas.get());
-            tablero.getRowConstraints().add(filas);
+
+        double totalHeight = tablero.getPrefHeight();
+        double totalWidth = tablero.getPrefWidth();
+
+        int filas = medidaFilas.get();
+        int columnas = medidaColumnas.get();
+
+        for (int i = 0; i< filas; i ++) {
+            RowConstraints fila = new RowConstraints();
+            fila.setPercentHeight(100.0 / filas);
+            tablero.getRowConstraints().add(fila);
         }
         for(int j = 0; j < medidaColumnas.get(); j ++){
-            ColumnConstraints columnas = new ColumnConstraints();
-            columnas.setPercentWidth(100.0 / medidaColumnas.get());
-            tablero.getColumnConstraints().add(columnas);
+            ColumnConstraints columna = new ColumnConstraints();
+            columna.setPercentWidth(100.0/ columnas);
+            tablero.getColumnConstraints().add(columna);
         }
-        for (int i = 0; i<medidaFilas.get();i++){
-            for (int j = 0;j < medidaColumnas.get(); j++){
+        for (int i = 0; i < filas;i ++ ){
+            for (int j = 0;j < columnas; j++){
                 Label label = new Label();
                 label.setStyle("-fx-border-color: black; -fx-alignment: center");
-                label.setPrefHeight(tablero.getPrefHeight());
-                label.setPrefWidth(tablero.getPrefWidth());
+                label.setPrefHeight(totalHeight/ filas);
+                label.setPrefWidth(totalWidth / columnas);
                 tablero.add(label, j, i);
             }
         }
     }
-    // Hay que mirar como hacer que el GridPane crezca al reves. De abajo a arriba las filas. Además hay que hacer que no se salga del AnchorPane.
-    //Lo demas bien.
+    @FXML
+    public void guardarButton(){
+        String nombre = nombrePartida.getText();
+        if (nombre == null || nombre.isEmpty()){
+            nameError.setText("Introduzca un nombre a su partida");
+        }else {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\PartidasGuardadas"))) {
+                writer.write("Nombre Partida="+nombre+" , "+"Columnas="+medidaColumnas.get()+" , "+"Filas="+medidaFilas.get()+","+
+                        "AguaVida="+medidaAguaVida.get()+" , "+"AguaClonacion="+medidaAguaClonacion.get()+" , "+"AguaReproduccion=" + medidaAguaReproduccion.get()+" , "+"AguaMuerte="+medidaAguaMuerte.get()+" , "+
+                        "BibliotecaVida="+medidaBibliotecaVida.get()+" , "+"BibliotecaClonacion="+medidaBibliotecaClonacion.get()+" , "+"BibliotecaReproduccion=" + medidaBibliotecaReproduccion.get()+" , "+"BibliotecaMuerte="+medidaBibliotecaMuerte.get()+" , "+
+                        "ComidaVida="+medidaComidaVida.get()+" , "+"ComidaClonacion="+medidaComidaClonacion.get()+" , "+"ComidaReproduccion=" + medidaComidaReproduccion.get()+" , "+"ComidaMuerte="+medidaComidaMuerte.get()+" , "+
+                        "MontañaVida="+medidaMontañaVida.get()+" , "+"MontañaClonacion="+medidaMontañaClonacion.get()+" , "+"MontañaReproduccion=" + medidaMontañaReproduccion.get()+" , "+"MontañaMuerte="+medidaMontañaMuerte.get()+" , "+
+                        "TesoroVida="+medidaTesoroVida.get()+" , "+"TesoroClonacion="+medidaTesoroClonacion.get()+" , "+"TesoroReproduccion=" + medidaTesoroReproduccion.get()+" , "+"TesoroMuerte="+medidaTesoroMuerte.get()+" , "+
+                        "PozoVida="+medidaPozoVida.get()+" , "+"PozoClonacion="+medidaPozoClonacion.get()+" , "+"PozoReproduccion=" + medidaPozoReproduccion.get()+" , "+"PozoMuerte="+medidaPozoMuerte.get()+" , "+
+                        "IndividuoVida="+medidaIndividuoVida.get()+" , "+"IndividuoClonacion="+medidaIndividuoClonacion.get()+" , "+"IndividuoReproduccion=" + medidaIndividuoReproduccion.get()+" , "+"IndividuoMuerte="+medidaIndividuoMuerte.get());
+                writer.newLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            abrirJuego();
+        }
+    }
+    private void abrirJuego(){
+        FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("game-view.fxml"));
+        try{
+            Scene scene = new Scene(fxmlLoader.load(), 700, 700);
+            stage.setTitle("El juego de la vida");
+            stage.setScene(scene);
+            GameController gameCoontroller = fxmlLoader.getController();
+            gameCoontroller.setStage(stage);
+            stage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }

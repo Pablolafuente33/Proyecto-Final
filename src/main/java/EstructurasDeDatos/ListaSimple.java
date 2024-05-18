@@ -8,6 +8,7 @@ public class ListaSimple<T> implements Iterable<T>{
 
     public ListaSimple(int max) {
         this.max = max;
+        this.elemento = new NodoLS[max];
     }
 
     public ListaSimple(){
@@ -62,7 +63,7 @@ public class ListaSimple<T> implements Iterable<T>{
     }
     public NodoLS<T> getSiguiente(NodoLS<T> el){
         NodoLS<T> elDevuelto = null;
-        for (int i = 0; i < max; i++){
+        for (int i = 0; i < max - 1; i++){
             if (elemento[i] != null && elemento[i+1] != null && elemento[i].getObject() == el.getObject()){
                 elDevuelto = elemento[i+1];
             };
