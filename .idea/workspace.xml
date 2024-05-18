@@ -7,7 +7,7 @@
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,9 @@
       <updated>1715959077224</updated>
       <workItem from="1715959078123" duration="6770000" />
       <workItem from="1715976528806" duration="14180000" />
-      <workItem from="1716028098051" duration="5049000" />
+      <workItem from="1716028098051" duration="5677000" />
+      <workItem from="1716040834507" duration="1842000" />
+      <workItem from="1716044698451" duration="2969000" />
     </task>
     <task id="LOCAL-00001" summary="Commit de guardar partida">
       <option name="closed" value="true" />
@@ -90,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716031603285</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit de guardar partida">
+      <option name="closed" value="true" />
+      <created>1716033184522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716033184522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
