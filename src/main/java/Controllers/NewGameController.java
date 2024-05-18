@@ -474,7 +474,9 @@ public class NewGameController implements Initializable{
         if (nombre == null || nombre.isEmpty()){
             nameError.setText("Introduzca un nombre a su partida");
         }else {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\PartidasGuardadas"))) {
+            File file = new File("C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\PartidasGuardadas");
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
                 writer.write("Nombre Partida="+nombre+" , "+"Columnas="+medidaColumnas.get()+" , "+"Filas="+medidaFilas.get()+","+
                         "AguaVida="+medidaAguaVida.get()+" , "+"AguaClonacion="+medidaAguaClonacion.get()+" , "+"AguaReproduccion=" + medidaAguaReproduccion.get()+" , "+"AguaMuerte="+medidaAguaMuerte.get()+" , "+
                         "BibliotecaVida="+medidaBibliotecaVida.get()+" , "+"BibliotecaClonacion="+medidaBibliotecaClonacion.get()+" , "+"BibliotecaReproduccion=" + medidaBibliotecaReproduccion.get()+" , "+"BibliotecaMuerte="+medidaBibliotecaMuerte.get()+" , "+
