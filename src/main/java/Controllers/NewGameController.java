@@ -512,8 +512,8 @@ public class NewGameController implements Initializable{
             Scene scene = new Scene(fxmlLoader.load(), 700, 700);
             stage.setTitle("El juego de la vida");
             stage.setScene(scene);
-            GameController gameCoontroller = fxmlLoader.getController();
-            gameCoontroller.setStage(stage);
+            GameController gameController = fxmlLoader.getController();
+            gameController.setStage(stage);
             stage.show();
         } catch (Exception e){
             e.printStackTrace();
