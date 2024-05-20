@@ -10,6 +10,7 @@ import individuo.PropertiesNuevosIndividuos;
 import recurso.Recurso;
 
 public class VidaController {
+    private ListaSimple<Recurso> recursos;
 
     public static void actualizarTurnosVidaIndividuos(Tablero tablero, Casilla cas, int turno) {
         ListaSimple<Individuo> individuosMuertos = new ListaSimple<>();
