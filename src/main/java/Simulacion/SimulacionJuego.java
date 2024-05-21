@@ -89,18 +89,21 @@ public class SimulacionJuego {
 
             /** Luego, los individuos realizan sus movimientos*/
             System.out.println(" ---> Movimiento");
-            for (Individuo individuo : tablero.getListaVivosIndividuos()) {
-                // Fijamos la posicion en el individuo
-                Casilla casillaInd = BusquedaController.buscarIndividuo(tablero, individuo);
-                individuo.setPosicion( casillaInd.getPosicion());
-                // Se fijan los recursos en el caso de que procedan
-                if ( (individuo.getTipo().equals(Constantes.IND_NORMAL) || individuo.getTipo().equals(Constantes.IND_AVANZADO))
-                        && individuo.getFijadoRecursoPosicion()==null ) {
-                    // Se fija el recurso al cual se va mover el usuario normal o avanzado.
-                    RecursoController.fijarRecursoIndividuo(tablero, individuo);
+            if (tablero.getListaVivosIndividuos()!=null && !tablero.getListaVivosIndividuos().isVacia()) {
+                for (int i=0; i<tablero.getListaVivosIndividuos().getNumeroElementos(); ++i) {
+                    // Fijamos la posicion en el individuo
+                    Individuo individuo = tablero.getListaVivosIndividuos().get(i);
+                    Casilla casillaInd = BusquedaController.buscarIndividuo(tablero, individuo);
+                    individuo.setPosicion(casillaInd.getPosicion());
+                    // Se fijan los recursos en el caso de que procedan
+                    if ((individuo.getTipo().equals(Constantes.IND_NORMAL) || individuo.getTipo().equals(Constantes.IND_AVANZADO))
+                            && individuo.getFijadoRecursoPosicion() == null) {
+                        // Se fija el recurso al cual se va mover el usuario normal o avanzado.
+                        RecursoController.fijarRecursoIndividuo(tablero, individuo);
+                    }
+                    // El usuario realiza la accion de movimiento
+                    MovimientoController.accionMovimiento(tablero, individuo);
                 }
-                // El usuario realiza la accion de movimiento
-                MovimientoController.accionMovimiento(tablero, individuo);
             }
 
             /** Comprobamos la interacción de los recursos con los individuos */
