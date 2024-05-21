@@ -4,6 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="2dd8970a-6610-44d9-abe2-b4638c0db3ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/FileReaderPartidas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/chargeGame-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/start-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,295 +27,71 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="UML Sequence" />
-        <option value="UML Class" />
-        <option value="FxmlFile" />
-        <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/demo/HelloApplication.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-        &quot;associatedIndex&quot;: 8
-        }</component>
-  <component name="ProjectId" id="2eu6aXkUTx0zmzwQERDF3Zrqg7G" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2gkOZRirraQgpJhnk1aJ1WUscYO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Pablo-Branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
 }</component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.demo" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="EstructurasDeDatos" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.SimulacionJuego">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tablero.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Simulacion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.StartApplication" />
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tablero.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListaSimpleTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ListaSimpleTest.getNumeroElementos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
-      <option name="METHOD_NAME" value="getNumeroElementos" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimulacionJuego" />
         <item itemvalue="Application.StartApplication" />
-        <item itemvalue="JUnit.ListaSimpleTest.add" />
-        <item itemvalue="JUnit.ListaSimpleTest.getNumeroElementos" />
-        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed23df3a-155a-4ef8-8dfc-8356ddfb2047" name="Changes" comment="" />
-      <created>1712742185667</created>
+      <changelist id="2dd8970a-6610-44d9-abe2-b4638c0db3ce" name="Changes" comment="" />
+      <created>1716238189819</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712742185667</updated>
-      <workItem from="1712742186733" duration="410000" />
-      <workItem from="1712742631249" duration="398000" />
-      <workItem from="1712743273016" duration="57000" />
-      <workItem from="1712743485463" duration="119000" />
-      <workItem from="1712745089003" duration="718000" />
-      <workItem from="1712768302051" duration="8060000" />
-      <workItem from="1712847012076" duration="11684000" />
-      <workItem from="1712910833121" duration="128000" />
-      <workItem from="1712911813191" duration="1161000" />
-      <workItem from="1712916624364" duration="565000" />
-      <workItem from="1712917414831" duration="413000" />
-      <workItem from="1713102511041" duration="10844000" />
-      <workItem from="1713341992237" duration="8344000" />
-      <workItem from="1713362654524" duration="6760000" />
-      <workItem from="1713461115092" duration="8073000" />
-      <workItem from="1713516627463" duration="6200000" />
-      <workItem from="1713538772337" duration="3820000" />
-      <workItem from="1713607060540" duration="7028000" />
-      <workItem from="1713694443935" duration="7197000" />
-      <workItem from="1713712467682" duration="2870000" />
-      <workItem from="1713949402012" duration="19800000" />
-      <workItem from="1714051499905" duration="13776000" />
-      <workItem from="1714123674248" duration="140000" />
-      <workItem from="1714123848532" duration="1373000" />
-      <workItem from="1714142496093" duration="2621000" />
-      <workItem from="1714207613979" duration="2614000" />
-      <workItem from="1714326524471" duration="4812000" />
-      <workItem from="1714747933548" duration="5009000" />
-      <workItem from="1714817592845" duration="872000" />
-      <workItem from="1714850267055" duration="620000" />
-      <workItem from="1714905814975" duration="183000" />
-      <workItem from="1715000770021" duration="5529000" />
-      <workItem from="1715009903200" duration="1719000" />
+      <updated>1716238189819</updated>
+      <workItem from="1716238190477" duration="6660000" />
+      <workItem from="1716308775593" duration="2073000" />
     </task>
-    <task id="LOCAL-00001" summary="Commit 1">
-      <option name="closed" value="true" />
-      <created>1712769244864</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712769244864</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Commit 7">
-      <option name="closed" value="true" />
-      <created>1713542582838</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1713542582838</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Commit 7">
-      <option name="closed" value="true" />
-      <created>1713695566894</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1713695566894</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Commit 8">
-      <option name="closed" value="true" />
-      <created>1713701628497</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1713701628497</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Commit 9">
-      <option name="closed" value="true" />
-      <created>1713982142924</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1713982142924</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commit 1" />
-    <MESSAGE value="Commit 7" />
-    <MESSAGE value="Commit 8" />
-    <MESSAGE value="Commit 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 9" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo$PilaTest.ic" NAME="PilaTest Coverage Results" MODIFIED="1712853737873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest.ic" NAME="ListaEnlazadaTest Coverage Results" MODIFIED="1712854988879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_getPrimero.ic" NAME="ListaEnlazadaTest.getPrimero Coverage Results" MODIFIED="1712859571316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_add.ic" NAME="ListaEnlazadaTest.add Coverage Results" MODIFIED="1712859620094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaSimpleTest_add.ic" NAME="ListaSimpleTest.add Coverage Results" MODIFIED="1713715325835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_isVacia.ic" NAME="ListaEnlazadaTest.isVacia Coverage Results" MODIFIED="1712859577844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$NodoLETest_getDato.ic" NAME="NodoLETest.getDato Coverage Results" MODIFIED="1712859952837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$PilaTest_pop.ic" NAME="PilaTest.pop Coverage Results" MODIFIED="1712853506990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$PilaTest_push.ic" NAME="PilaTest.push Coverage Results" MODIFIED="1712853699158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$NodoLETest_insertarmeEn.ic" NAME="NodoLETest.insertarmeEn Coverage Results" MODIFIED="1712859897396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$Main_Pruebas.ic" NAME="Main_Pruebas Coverage Results" MODIFIED="1712852807275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/demo$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1712868408956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.example.demo.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$NodoLETest_getSiguiente.ic" NAME="NodoLETest.getSiguiente Coverage Results" MODIFIED="1712859532417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$NodoLETest_setDato.ic" NAME="NodoLETest.setDato Coverage Results" MODIFIED="1712859978988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaSimpleTest_getNumeroElementos.ic" NAME="ListaSimpleTest.getNumeroElementos Coverage Results" MODIFIED="1713714750157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/demo$ListaEnlazadaTest_getUltimo.ic" NAME="ListaEnlazadaTest.getUltimo Coverage Results" MODIFIED="1712859550966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>EstructurasDeDatos.*</FILTER>
-    </SUITE>
   </component>
 </project>

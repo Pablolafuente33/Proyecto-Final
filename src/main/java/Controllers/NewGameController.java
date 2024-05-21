@@ -489,16 +489,15 @@ public class NewGameController implements Initializable{
             nameError.setText("Introduzca un nombre a su partida");
         }else {
             File file = new File("C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\PartidasGuardadas");
-
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
                 writer.write("Nombre Partida="+nombre+" , "+"Columnas="+medidaColumnas.get()+" , "+"Filas="+medidaFilas.get()+","+
-                        "AguaVida="+medidaAguaVida.get()+" , "+"AguaClonacion="+medidaAguaClonacion.get()+" , "+"AguaReproduccion=" + medidaAguaReproduccion.get()+" , "+"AguaMuerte="+medidaAguaMuerte.get()+" , "+
-                        "BibliotecaVida="+medidaBibliotecaVida.get()+" , "+"BibliotecaClonacion="+medidaBibliotecaClonacion.get()+" , "+"BibliotecaReproduccion=" + medidaBibliotecaReproduccion.get()+" , "+"BibliotecaMuerte="+medidaBibliotecaMuerte.get()+" , "+
-                        "ComidaVida="+medidaComidaVida.get()+" , "+"ComidaClonacion="+medidaComidaClonacion.get()+" , "+"ComidaReproduccion=" + medidaComidaReproduccion.get()+" , "+"ComidaMuerte="+medidaComidaMuerte.get()+" , "+
-                        "MontañaVida="+medidaMontañaVida.get()+" , "+"MontañaClonacion="+medidaMontañaClonacion.get()+" , "+"MontañaReproduccion=" + medidaMontañaReproduccion.get()+" , "+"MontañaMuerte="+medidaMontañaMuerte.get()+" , "+
-                        "TesoroVida="+medidaTesoroVida.get()+" , "+"TesoroClonacion="+medidaTesoroClonacion.get()+" , "+"TesoroReproduccion=" + medidaTesoroReproduccion.get()+" , "+"TesoroMuerte="+medidaTesoroMuerte.get()+" , "+
-                        "PozoVida="+medidaPozoVida.get()+" , "+"PozoClonacion="+medidaPozoClonacion.get()+" , "+"PozoReproduccion=" + medidaPozoReproduccion.get()+" , "+"PozoMuerte="+medidaPozoMuerte.get()+" , "+
-                        "IndividuoVida="+medidaIndividuoVida.get()+" , "+"IndividuoClonacion="+medidaIndividuoClonacion.get()+" , "+"IndividuoReproduccion=" + medidaIndividuoReproduccion.get()+" , "+"IndividuoMuerte="+medidaIndividuoMuerte.get());
+                        "AguaVida="+medidaAguaVida.get()+" , "+"AguaClonacion="+medidaAguaClonacion.get()/100.0+" , "+"AguaReproduccion=" + medidaAguaReproduccion.get()/100.0+" , "+"AguaMuerte="+medidaAguaMuerte.get()/100.0+" , "+
+                        "BibliotecaVida="+medidaBibliotecaVida.get()+" , "+"BibliotecaClonacion="+medidaBibliotecaClonacion.get()/100.0+" , "+"BibliotecaReproduccion=" + medidaBibliotecaReproduccion.get()/100.0+" , "+"BibliotecaMuerte="+medidaBibliotecaMuerte.get()/100.0+" , "+
+                        "ComidaVida="+medidaComidaVida.get()+" , "+"ComidaClonacion="+medidaComidaClonacion.get()/100.0+" , "+"ComidaReproduccion=" + medidaComidaReproduccion.get()/100.0+" , "+"ComidaMuerte="+medidaComidaMuerte.get()/100.0+" , "+
+                        "MontañaVida="+medidaMontañaVida.get()+" , "+"MontañaClonacion="+medidaMontañaClonacion.get()/100.0+" , "+"MontañaReproduccion=" + medidaMontañaReproduccion.get()/100.0+" , "+"MontañaMuerte="+medidaMontañaMuerte.get()/100.0+" , "+
+                        "TesoroVida="+medidaTesoroVida.get()+" , "+"TesoroClonacion="+medidaTesoroClonacion.get()/100.0+" , "+"TesoroReproduccion=" + medidaTesoroReproduccion.get()/100.0+" , "+"TesoroMuerte="+medidaTesoroMuerte.get()/100.0+" , "+
+                        "PozoVida="+medidaPozoVida.get()+" , "+"PozoClonacion="+medidaPozoClonacion.get()/100.0+" , "+"PozoReproduccion=" + medidaPozoReproduccion.get()/100.0+" , "+"PozoMuerte="+medidaPozoMuerte.get()/100.0+" , "+
+                        "IndividuoVida="+medidaIndividuoVida.get()+" , "+"IndividuoClonacion="+medidaIndividuoClonacion.get()/100.0+" , "+"IndividuoReproduccion=" + medidaIndividuoReproduccion.get()/100.0+" , "+"IndividuoMuerte="+medidaIndividuoMuerte.get()/100.0);
                 writer.newLine();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -509,8 +508,8 @@ public class NewGameController implements Initializable{
     private void abrirJuego(){
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("game-view.fxml"));
         try{
-            Scene scene = new Scene(fxmlLoader.load(), 700, 700);
-            stage.setTitle("El juego de la vida");
+            Scene scene = new Scene(fxmlLoader.load(), 800, 800);
+            stage.setTitle("El juego de la vida: "+ nombrePartida.getText());
             stage.setScene(scene);
             GameController gameController = fxmlLoader.getController();
             gameController.setStage(stage);

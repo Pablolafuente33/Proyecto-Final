@@ -20,7 +20,6 @@ public class Individuo {
     private Posicion posicion; // el control de las posiciones la lleva el objeto tablero, este atributo sólo es auxiliar
 
 
-
     public Individuo(String id, int turnoGeneracion, int turnosVida, double probabilidadReproduccion, double probabilidadClonacion,
                      String tipo) {
         this.id = id;
@@ -35,6 +34,7 @@ public class Individuo {
         this.fijadoRecursoPosicion = null;
         this.posicion = null;
     }
+
 
     public String getId() {
         return id;
