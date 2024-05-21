@@ -13,5 +13,7 @@ public class GameController {
     public void setStage(Stage stage){
         this.stage = stage;
     }
-    public void pausarButton(){}
+    public void pausarButton(){
+
+    }
 }
