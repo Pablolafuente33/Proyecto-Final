@@ -9,8 +9,6 @@ public class Individuo {
     private int probabilidadReproduccion;
     private int probabilidadClonacion;
     private int probabilidadMuerte;
-    private String tipo;
-    private Movimiento movimiento;
 
     public Individuo(int id, int generacion, int turnosVida, int probabilidadReproduccion, int probabilidadClonacion, String tipo) {
         this.id = id;
@@ -65,13 +63,6 @@ public class Individuo {
         this.probabilidadClonacion = probabilidadClonacion;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
     public void pintar(GraphicsContext graficos){
         ;
     }
