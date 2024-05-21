@@ -442,28 +442,42 @@ public class NewGameController implements Initializable{
         tablero.getRowConstraints().clear();
         tablero.getColumnConstraints().clear();
 
-        double totalHeight = tablero.getPrefHeight();
-        double totalWidth = tablero.getPrefWidth();
+        double totalHeight = 250;
+        double totalWidth = 310;
+        tablero.setPrefHeight(totalHeight);
+        tablero.setPrefWidth(totalWidth);
+        tablero.setMaxHeight(totalHeight);
+        tablero.setMaxWidth(totalWidth);
+        tablero.setMinHeight(totalHeight);
+        tablero.setMinWidth(totalWidth);
 
         int filas = medidaFilas.get();
         int columnas = medidaColumnas.get();
 
         for (int i = 0; i< filas; i ++) {
             RowConstraints fila = new RowConstraints();
-            fila.setPercentHeight(100.0 / filas);
+            fila.setMinHeight(totalHeight / filas);
+            fila.setPrefHeight(totalHeight / filas);
+            fila.setMaxHeight(totalHeight / filas);
             tablero.getRowConstraints().add(fila);
         }
         for(int j = 0; j < medidaColumnas.get(); j ++){
             ColumnConstraints columna = new ColumnConstraints();
-            columna.setPercentWidth(100.0/ columnas);
+            columna.setMinWidth(totalWidth / columnas);
+            columna.setPrefWidth(totalWidth / columnas);
+            columna.setMaxWidth(totalWidth / columnas);
             tablero.getColumnConstraints().add(columna);
         }
         for (int i = 0; i < filas;i ++ ){
             for (int j = 0;j < columnas; j++){
                 Label label = new Label();
                 label.setStyle("-fx-border-color: black; -fx-alignment: center");
-                label.setPrefHeight(totalHeight/ filas);
+                label.setMinHeight(totalHeight / filas);
+                label.setPrefHeight(totalHeight / filas);
+                label.setMaxHeight(totalHeight / filas);
+                label.setMinWidth(totalWidth / columnas);
                 label.setPrefWidth(totalWidth / columnas);
+                label.setMaxWidth(totalWidth / columnas);
                 tablero.add(label, j, i);
             }
         }
@@ -498,8 +512,8 @@ public class NewGameController implements Initializable{
             Scene scene = new Scene(fxmlLoader.load(), 700, 700);
             stage.setTitle("El juego de la vida");
             stage.setScene(scene);
-            GameController gameCoontroller = fxmlLoader.getController();
-            gameCoontroller.setStage(stage);
+            GameController gameController = fxmlLoader.getController();
+            gameController.setStage(stage);
             stage.show();
         } catch (Exception e){
             e.printStackTrace();
