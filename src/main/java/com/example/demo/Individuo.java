@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.image.Image;
 
 public class Individuo {
     private int id;
@@ -77,4 +76,3 @@ public class Individuo {
         ;
     }
 }
-
