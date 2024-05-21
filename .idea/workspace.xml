@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" afterDir="false" />
-    </list>
+    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
