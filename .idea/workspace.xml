@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/IndividuoModelProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Recursos_Juego/Recurso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Individuo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/individuo/Individuo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,7 @@
     &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Miguel&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/santi/Documents/ESTRUCTURADATOS/Proyecto-Final&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -50,7 +53,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SimulacionJuego">
+    <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Simulacion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.StartApplication" />
       <module name="ProyectoFinal" />
@@ -66,9 +82,17 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimulacionJuego" />
         <item itemvalue="Application.StartApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,6 +105,8 @@
       <workItem from="1715959078123" duration="6770000" />
       <workItem from="1715976528806" duration="14180000" />
       <workItem from="1716028098051" duration="5049000" />
+      <workItem from="1716215758267" duration="9494000" />
+      <workItem from="1716277673977" duration="1116000" />
     </task>
     <task id="LOCAL-00001" summary="Commit de guardar partida">
       <option name="closed" value="true" />

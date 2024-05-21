@@ -43,16 +43,21 @@ public class VidaController {
 
 
     public static void actualizarTurnosVidaRecursos(Tablero tablero, Casilla cas) {
-        ListaSimple<Recurso> recursosAgotados = new ListaSimple<>();
-        for (Recurso recurso : cas.getListaRecursos()) {
-            int actualTurnosVida = recurso.getTurnosVida();
-            recurso.setTurnosVida(actualTurnosVida-1);
-            if (recurso.getTurnosVida()<=0) {
-                recursosAgotados.add(recurso);
+        if (cas.getListaRecursos()!=null && !cas.getListaRecursos().isVacia()) {
+            ListaSimple<Recurso> recursosAgotados = new ListaSimple<>();
+            for (int i=0; i<cas.getListaRecursos().getNumeroElementos(); ++i) {
+                int actualTurnosVida = cas.getListaRecursos().get(i).getTurnosVida();
+                cas.getListaRecursos().get(i).setTurnosVida(actualTurnosVida-1);
+                if (cas.getListaRecursos().get(i).getTurnosVida()<=0) {
+                    recursosAgotados.add(cas.getListaRecursos().get(i));
+                }
             }
-        }
-        for (Recurso recAgotado: recursosAgotados) {
-            muerteRecurso(tablero, cas, recAgotado);
+            if (recursosAgotados!=null && !recursosAgotados.isVacia()) {
+                for (int i=0; i<recursosAgotados.getNumeroElementos(); ++i) {
+                    Recurso recAgotado = recursosAgotados.get(i);
+                    muerteRecurso(tablero, cas, recAgotado);
+                }
+            }
         }
     }
 
@@ -72,18 +77,21 @@ public class VidaController {
         ListaSimple<Individuo> individuosMuertos = new ListaSimple<>();
         for (Recurso recurso : cas.getListaRecursos()) {
             for (Individuo individuo : cas.getListaIndividuos()) {
-                individuo.setTurnosVida( individuo.getTurnosVida() + recurso.getTurnosVidaInd());
-                individuo.setProbabilidadReproduccion( individuo.getProbabilidadReproduccion() +
-                        recurso.getProbReproduccionInd());
-                individuo.setProbabilidadClonacion( individuo.getProbabilidadClonacion() +
+                if (individuo.getMaxTurnosVida()<recurso.getTurnosVidaInd()) {
+                    individuo.setMaxTurnosVida(recurso.getTurnosVidaInd());
+                        individuo.setTurnosVida( individuo.getTurnosVida() + recurso.getTurnosVidaInd());
+                    individuo.setProbabilidadReproduccion( individuo.getProbabilidadReproduccion() +
+                            recurso.getProbReproduccionInd());
+                    individuo.setProbabilidadClonacion( individuo.getProbabilidadClonacion() +
                         recurso.getProbClonacionInd());
-                individuo.getOperaciones().add(Constantes.OPER_ITERACCION + "-" + recurso.getNombre());
-                System.out.println("      Iteraccion recursos -- individuos: el usuario " + individuo.getId() +
+                    individuo.getOperaciones().add(Constantes.OPER_ITERACCION + "-" + recurso.getNombre());
+                    System.out.println("      Iteraccion recursos -- individuos: el usuario " + individuo.getId() +
                         " ha interaccionado con el recurso de categoria " + recurso.getNombre());
-                individuo.setFijadoRecursoPosicion(null);
-                tablero.getListaOperacionesIteraccionRecurso().add(individuo.getId()+"--"+recurso.getNombre());
-                if (individuo.getTurnosVida()<=0) {
-                    individuosMuertos.add(individuo);
+                    individuo.setFijadoRecursoPosicion(null);
+                    tablero.getListaOperacionesIteraccionRecurso().add(individuo.getId()+"--"+recurso.getNombre());
+                    if (individuo.getTurnosVida()<=0) {
+                        individuosMuertos.add(individuo);
+                    }
                 }
             }
         }
