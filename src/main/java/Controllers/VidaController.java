@@ -13,22 +13,21 @@ public class VidaController {
     private ListaSimple<Recurso> recursos;
 
     public static void actualizarTurnosVidaIndividuos(Tablero tablero, Casilla cas, int turno) {
-        ListaSimple<Individuo> individuosMuertos = new ListaSimple<>();
-        for (Individuo individuo : cas.getListaIndividuos()) {
-            int actualTurnosVida = individuo.getTurnosVida();
-            individuo.setTurnosVida(actualTurnosVida-1);
-            if (individuo.getTurnosVida()<=0) {
-                individuosMuertos.add(individuo);
-            } else {
-                double actualProbReproduccion = individuo.getProbabilidadReproduccion();
-                individuo.setProbabilidadReproduccion(actualProbReproduccion*0.9);
-
-                double actualProbClonacion = individuo.getProbabilidadClonacion();
-                individuo.setProbabilidadClonacion(actualProbClonacion*0.9);
+        if (cas.getListaIndividuos()!=null && !cas.getListaIndividuos().isVacia()) {
+            ListaSimple<Recurso> individuosMuertos = new ListaSimple<>();
+            for (int i=0; i<cas.getListaIndividuos().getNumeroElementos(); ++i) {
+                int actualTurnosVida = cas.getListaIndividuos().get(i).getTurnosVida();
+                cas.getListaIndividuos().get(i).setTurnosVida(actualTurnosVida-1);
+                if (cas.getListaIndividuos().get(i).getTurnosVida()<=0) {
+                    individuosMuertos.add(cas.getListaRecursos().get(i));
+                }
             }
-        }
-        for (Individuo indMuerto : individuosMuertos) {
-            muerteIndividuo(tablero, cas, indMuerto, turno);
+            if (individuosMuertos!=null && !individuosMuertos.isVacia()) {
+                for (int i=0; i<individuosMuertos.getNumeroElementos(); ++i) {
+                    Recurso recAgotado = individuosMuertos.get(i);
+                    muerteRecurso(tablero, cas, recAgotado);
+                }
+            }
         }
     }
 
