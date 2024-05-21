@@ -10,6 +10,7 @@ public class Individuo {
     private String id;
     private int turnoGeneracion;
     private int turnosVida;
+    private int maxTurnosVida;
     private int turnoMuerte;
     private double probabilidadReproduccion;
     private double probabilidadClonacion;
@@ -25,6 +26,7 @@ public class Individuo {
         this.id = id;
         this.turnoGeneracion = turnoGeneracion;
         this.turnosVida = turnosVida;
+        this.maxTurnosVida = turnosVida;
         this.turnoMuerte = turnoGeneracion + turnosVida; // este sería el turno de muerte natural
         this.probabilidadReproduccion = probabilidadReproduccion;
         this.probabilidadMuerte = 1 - probabilidadReproduccion;
@@ -111,6 +113,13 @@ public class Individuo {
     }
     public void setPosicion(Posicion pos) {
         this.posicion = pos;
+    }
+
+    public int getMaxTurnosVida() {
+        return maxTurnosVida;
+    }
+    public void setMaxTurnosVida(int maxTurnosVida) {
+        this.maxTurnosVida = maxTurnosVida;
     }
 
     /**
