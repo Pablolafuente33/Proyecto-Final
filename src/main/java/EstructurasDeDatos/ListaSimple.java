@@ -1,6 +1,7 @@
 package EstructurasDeDatos;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class ListaSimple<T> implements Iterable<T>{
     private NodoLS[] elemento;
@@ -84,21 +85,21 @@ public class ListaSimple<T> implements Iterable<T>{
         }
     }
     public Iterator<T> iterator() {
-        int size = this.getNumeroElementos();
-        Iterator<T> iterator = new Iterator<>() {
+        return new Iterator<T>() {
             private int pos = 0;
+            @Override
             public boolean hasNext() {
-                return pos < size && elemento[pos] != null;
+                return pos < getNumeroElementos();
             }
+
+            @Override
             public T next() {
-                return (T) elemento[pos++];
-                //Puede dar error
-            }
-            public void remove() {
-                throw new UnsupportedOperationException();
+                if(!hasNext()){
+                    throw new NoSuchElementException();
+                }
+                return (T) elemento[pos ++].getObject();
             }
         };
-        return iterator;
     }
     public boolean remove(T o) {
         boolean removed = false;
