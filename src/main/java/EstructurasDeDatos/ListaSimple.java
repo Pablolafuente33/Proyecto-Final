@@ -41,26 +41,52 @@ public class ListaSimple<T> implements Iterable<T>{
         }
     }
     public T get(int index) {
-        if (index < 0 || index >= getNumeroElementos()) {
+        int tamaño = getNumeroElementos();
+        if (index < 0 || (index >= tamaño && tamaño > 0)) {
             throw new IndexOutOfBoundsException("Índice fuera de los límites de la lista");
         }
         return (T) elemento[index].getObject();
     }
     public void set(int index, T value) {
-        if (index < 0 || index >= getNumeroElementos()) {
+        int tamaño = getNumeroElementos();
+        if (index < 0 || (index >= tamaño && tamaño > 0)) {
             throw new IndexOutOfBoundsException("Índice fuera de los límites de la lista");
         }
         elemento[index] = new NodoLS<>(value);
     }
     public void add(T o){
         int i = 0;
-        if (getNumeroElementos() == max){
-            max += 50;
-        }
         while (i < max && elemento[i] != null){
             i++;
         }
-        elemento[i] = new NodoLS<>(o);
+        if (i == max){
+            NodoLS[] nuevoElemento = new NodoLS[max+25];
+            nuevoElemento[i] = new NodoLS<>(o);
+            for(int j=0; j<this.getNumeroElementos();j++) {
+                nuevoElemento[j] = elemento[j];
+            }
+            max += 25;
+            elemento = nuevoElemento;
+        } else {
+            elemento[i] = new NodoLS<>(o);
+        }
+    }
+    public void addNodoLS(NodoLS nodoLS){
+        int i = 0;
+        while (i < max && elemento[i] != null){
+            i++;
+        }
+        if (i == max){
+            NodoLS[] nuevoElemento = new NodoLS[max+25];
+            nuevoElemento[i] = nodoLS;
+            for(int j=0; j<this.getNumeroElementos();j++) {
+                nuevoElemento[j] = elemento[j];
+            }
+            max += 25;
+            elemento = nuevoElemento;
+        } else {
+            elemento[i] = nodoLS;
+        }
     }
     public NodoLS<T> getSiguiente(NodoLS<T> el){
         NodoLS<T> elDevuelto = null;
@@ -75,10 +101,8 @@ public class ListaSimple<T> implements Iterable<T>{
         if(elemento[0] == null){
             return 0;
         }else {
-            int i = 1;
-            NodoLS<T> el = elemento[i - 1];
-            while (this.getSiguiente(el) != null){
-                el = this.getSiguiente(el);
+            int i = 0;
+            while (i<max && elemento[i] != null){
                 i ++;
             }
             return i;
@@ -155,7 +179,7 @@ public class ListaSimple<T> implements Iterable<T>{
     public void addAll(ListaSimple<T> otraLista) {
         Iterator<T> iterator = otraLista.iterator();
         while (iterator.hasNext()) {
-            this.add(iterator.next());
+            this.addNodoLS((NodoLS) iterator.next());
         }
     }
     public static <T> ListaSimple<T> of(T... elementos) {

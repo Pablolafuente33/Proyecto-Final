@@ -15,6 +15,7 @@ public class SimulacionJuego {
 
         /** Se inicializa el tablero NxM */
         int turno = 0;
+        int maximoTurnos = 100;
         int n = 10;
         int m = 10;
         Tablero tablero = new Tablero(n,m);
@@ -38,17 +39,18 @@ public class SimulacionJuego {
         Recurso pozo = new Recurso("Pozo", 100, 0.5, Integer.MAX_VALUE, 0.0, 0.0, 0.0);
 
         // Individuos
-        Individuo pascual = new Individuo("Pascual", 0, 10, 0.5, 0.5, Constantes.IND_BASICO);
-        Individuo pingo = new Individuo("Pingo", 0, 10, 0.5, 0.5, Constantes.IND_NORMAL);
-        Individuo polis = new Individuo("Polis", 0, 5, 0.5, 0.5, Constantes.IND_AVANZADO);
-        Individuo panties = new Individuo("Panties", 0, 10, 0.5, 0.5, Constantes.IND_BASICO);
-        Individuo mapi = new Individuo("Mapi", 0, 10, 0.5, 0.5, Constantes.IND_NORMAL);
+        Individuo pascual = new Individuo("Pascual", 0, 10, 0.95, 0.95, Constantes.IND_BASICO);
+        Individuo pingo = new Individuo("Pingo", 0, 10, 0.95, 0.95, Constantes.IND_NORMAL);
+        Individuo polis = new Individuo("Polis", 0, 5, 0.95, 0.95, Constantes.IND_AVANZADO);
+        Individuo panties = new Individuo("Panties", 0, 100, 0.95, 0.5, Constantes.IND_BASICO);
+        Individuo mapi = new Individuo("Mapi", 0, 100, 0.5, 0.95, Constantes.IND_NORMAL);
         Individuo sharky = new Individuo("Sharky", 0, 5, 0.5, 0.5, Constantes.IND_AVANZADO);
 
         /** Se colocan los recursos e individuos en el tablero*/
         // Las posiciones no pueden ser nulas
-        tablero.getListaRecursosUnicos().addAll(ListaSimple.of(agua, comida, montaña, tesoro, biblioteca, pozo));
-        tablero.getListaRecursosON().addAll(tablero.getListaRecursosUnicos());
+        ListaSimple<Recurso> listaRecursos = ListaSimple.of(agua, comida, montaña, tesoro, biblioteca, pozo);
+        tablero.setListaRecursosUnicos(listaRecursos);
+        tablero.getListaRecursosON().addAll(listaRecursos);
 
         tablero.getListaVivosIndividuos().add(pascual);
         tablero.getListaVivosIndividuos().add(pingo);
@@ -73,7 +75,7 @@ public class SimulacionJuego {
         tablero.getCasillaFilaColumna(9, 0).getListaRecursos().add(biblioteca);
         tablero.getCasillaFilaColumna(6, 6).getListaRecursos().add(pozo);
 
-        while ( tablero.getListaVivosIndividuos().getNumeroElementos()>1 && turno<10 ) {
+        while ( tablero.getListaVivosIndividuos().getNumeroElementos()>1 && turno<maximoTurnos ) {
             ++turno;
             System.out.println("Comienza el turno: " + turno);
 
@@ -127,7 +129,8 @@ public class SimulacionJuego {
                     if ( !cas.getListaIndividuos().isVacia() && cas.getListaIndividuos().getNumeroElementos()>2 ) {
                         // Comprobamos que individuos son los que se van a reproducir
                         ListaSimple<Individuo> indReproductores = new ListaSimple<>();
-                        for (Individuo ind : cas.getListaIndividuos()) {
+                        for (int k=0; k<nuevosIndividuos.getNumeroElementos(); ++k) {
+                            Individuo ind = nuevosIndividuos.get(k);
                             if (AleatoriedadController.sortearAccion(ind.getProbabilidadReproduccion())) {
                                 // El usuario actual es reproductor
                                 indReproductores.add(ind);
@@ -147,7 +150,8 @@ public class SimulacionJuego {
                             // No se reproduce ningun individuo en la casilla actual, luego todos mueren
                             ListaSimple<Individuo> indSacrificados = new ListaSimple<>();
                             indSacrificados.addAll(cas.getListaIndividuos());
-                            for (Individuo indSacr : indSacrificados ) {
+                            for (int k=0; k<indSacrificados.getNumeroElementos(); ++k) {
+                                Individuo indSacr = indSacrificados.get(k);
                                 VidaController.muerteIndividuo(tablero, cas, indSacr, turno);
                             }
                         }
@@ -155,7 +159,8 @@ public class SimulacionJuego {
                     }
 
                     // Se comprueba si algun individuo se clona así mismo
-                    for (Individuo individuo : cas.getListaIndividuos()) {
+                    for (int k=0; k<cas.getListaIndividuos().getNumeroElementos(); ++k) {
+                        Individuo individuo = cas.getListaIndividuos().get(k);
                         Individuo clonadoInd = VidaController.clonacionIndividuos(tablero, individuo, turno);
                         if (clonadoInd != null) {
                             nuevosIndividuos.add(clonadoInd);
@@ -163,7 +168,8 @@ public class SimulacionJuego {
                     }
 
                     // Nacen los individuos clonados y nacidos por reproduccion
-                    for (Individuo nInd : nuevosIndividuos) {
+                    for (int k=0; k<nuevosIndividuos.getNumeroElementos(); ++k) {
+                        Individuo nInd = nuevosIndividuos.get(k);
                         VidaController.nacimientoIndividuo(tablero, nInd);
                     }
 
@@ -181,6 +187,7 @@ public class SimulacionJuego {
                     }
                 }
             }
+            System.out.println("Siguiente turno");
 
 
         }
@@ -191,6 +198,5 @@ public class SimulacionJuego {
         System.out.println("listaOperacionesNacimiento: " + tablero.getListaOperacionesNacimiento().toString());
         System.out.println("listaOperacionesMuerte: " + tablero.getListaOperacionesMuerte().toString());
         System.out.println("listaOperacionesIteraccionRecurso: " + tablero.getListaOperacionesIteraccionRecurso().toString());
-
     }
 }
