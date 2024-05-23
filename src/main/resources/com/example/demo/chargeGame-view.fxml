@@ -4,10 +4,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ChargeGameController">
    <children>
-      <VBox fx:id="vBoxPartidas" alignment="CENTER" layoutX="189.0" layoutY="100.0" prefHeight="200.0" prefWidth="222.0" />
-      <Label layoutX="210.0" layoutY="43.0" prefHeight="29.0" prefWidth="180.0" text="Selecione una partida" textFill="#0057c9">
+      <VBox fx:id="partidas" alignment="CENTER" layoutX="189.0" layoutY="100.0" prefHeight="200.0" prefWidth="222.0" spacing="10.0" />
+      <Label layoutX="195.0" layoutY="43.0" prefHeight="29.0" prefWidth="195.0" text="Seleccione una partida" textFill="#0057c9">
          <font>
             <Font name="Centaur" size="23.0" />
          </font>

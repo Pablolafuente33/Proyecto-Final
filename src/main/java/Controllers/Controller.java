@@ -1,6 +1,6 @@
 package Controllers;
 
-import EstructurasDeDatos.ListaSimple;
+import EstructurasDeDatos.*;
 import Parameter.Properties.IndividuoModelProperties;
 import Parameter.Properties.RecursosModelProperties;
 import Parameter.Properties.TableroModelProperties;
@@ -68,8 +68,6 @@ public class Controller{
     @FXML
     private Label chargeError;
     @FXML
-    private VBox vBoxPartidas;
-    @FXML
     public void onChargeGameButtonClick(){
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("chargeGame-view.fxml"));
         String filePath = "C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\PartidasGuardadas";
@@ -77,17 +75,19 @@ public class Controller{
         if (file.length() == 0){
             chargeError.setText("No hay partidas guardadas. Por favor cree una nueve");
         }else {
-            ListaSimple<String> partidas = FileReaderPartidas.leerPartidas(filePath);
+            ListaSimple<HashMap<String, String>> listaPartidas = FileReaderPartidas.cargarParametro(filePath);
             try {
-                for (int i = 0; i< partidas.getNumeroElementos(); i++){
-                    String partida = partidas.get(i); // Obtenemos el nombre de la partida de la lista.
-                    Button botonPartida = new Button(partida);
-                    vBoxPartidas.getChildren().add(botonPartida);
-                }
+                //Primerio cargamos la escena para que los elementos se intrduzcan correctamente
                 Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+                ChargeGameController c = fxmlLoader.getController();
                 stage.setTitle("Cargar Partida");
                 stage.setScene(scene);
-                ChargeGameController c = fxmlLoader.getController();
+                c.getPartidas().getChildren().clear();
+                for (HashMap<String, String> parametros : listaPartidas){
+                    String nombrePartida = parametros.get("Nombre Partida");
+                    Button botonPartida = new Button(nombrePartida);
+                    c.getPartidas().getChildren().add(botonPartida);
+                }
                 stage.show();
             } catch (Exception e) {
                 e.printStackTrace();
