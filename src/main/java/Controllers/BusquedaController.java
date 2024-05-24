@@ -13,7 +13,7 @@ public class BusquedaController {
         for (int i=0; i<tablero.getFilas(); ++i) {
             for (int j=0; j<tablero.getColumnas(); ++j) {
                 Casilla cas = tablero.getCasillaFilaColumna(i,j);
-                if ( cas.getListaIndividuos().contains(individuo) ) {
+                if ( cas.getListaIndividuos().indexOf(individuo)>=0 ) {
                     return cas;
                 }
             }

@@ -109,21 +109,21 @@ public class ListaSimple<T> implements Iterable<T>{
         }
     }
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        int size = this.getNumeroElementos();
+        Iterator<T> iterator = new Iterator<>() {
             private int pos = 0;
-            @Override
             public boolean hasNext() {
-                return pos < getNumeroElementos();
+                return pos < size && elemento[pos] != null;
             }
-
-            @Override
             public T next() {
-                if(!hasNext()){
-                    throw new NoSuchElementException();
-                }
-                return (T) elemento[pos ++].getObject();
+                return (T) elemento[pos++];
+                //Puede dar error
+            }
+            public void remove() {
+                throw new UnsupportedOperationException();
             }
         };
+        return iterator;
     }
     public boolean remove(T o) {
         boolean removed = false;
