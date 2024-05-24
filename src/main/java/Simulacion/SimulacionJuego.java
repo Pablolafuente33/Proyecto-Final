@@ -9,6 +9,7 @@ import individuo.Individuo;
 import individuo.PropertiesNuevosIndividuos;
 import recurso.Recurso;
 
+
 public class SimulacionJuego {
 
     public static void main(String[] args) {
@@ -198,5 +199,6 @@ public class SimulacionJuego {
         System.out.println("listaOperacionesNacimiento: " + tablero.getListaOperacionesNacimiento().toString());
         System.out.println("listaOperacionesMuerte: " + tablero.getListaOperacionesMuerte().toString());
         System.out.println("listaOperacionesIteraccionRecurso: " + tablero.getListaOperacionesIteraccionRecurso().toString());
+
     }
 }
