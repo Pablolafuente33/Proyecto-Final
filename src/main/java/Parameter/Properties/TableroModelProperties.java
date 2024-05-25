@@ -15,6 +15,9 @@ public class TableroModelProperties {
     public void setTableroOriginal(Tablero tableroOriginal) {
         this.tableroOriginal = tableroOriginal;
     }
+    public Tablero getTableroOriginal(){
+        return tableroOriginal;
+    }
 
     public void setX(int x) {
         this.columnas.set(x);

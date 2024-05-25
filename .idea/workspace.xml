@@ -6,44 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;assignee&quot;: &quot;Miguelhn12&quot;
-    }
-  ],
-  &quot;lastFilter&quot;: {
-    &quot;assignee&quot;: &quot;Miguelhn12&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="64cb3fbc-a699-496c-87c9-bfc0b150f8bf" />
-        <option name="url" value="https://github.com/Pablolafuente33/Proyecto-Final.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2grg26R7W2bybiMiG9wPF3xqi9o" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -88,8 +65,6 @@
     "JUnit.VidaControllerTest.testMuerteIndividuo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "Miguel",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -99,101 +74,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="Tablero" />
-      <recent name="Recursos_Juego" />
-      <recent name="recurso" />
-      <recent name="Parameter.Properties" />
-      <recent name="individuo" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.TableroTest">
-    <configuration name="CasillaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tablero.*" />
+          <option name="PATTERN" value="Simulacion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tablero" />
-      <option name="MAIN_CLASS_NAME" value="Tablero.CasillaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MontañaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Recursos_Juego.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Recursos_Juego" />
-      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.MontañaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PozoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Recursos_Juego.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Recursos_Juego" />
-      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.PozoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tablero.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tablero" />
-      <option name="MAIN_CLASS_NAME" value="Tablero.TableroTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesoroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoFinal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Recursos_Juego.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Recursos_Juego" />
-      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.TesoroTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TableroTest" />
-        <item itemvalue="JUnit.CasillaTest" />
-        <item itemvalue="JUnit.TesoroTest" />
-        <item itemvalue="JUnit.PozoTest" />
-        <item itemvalue="JUnit.MontañaTest" />
+        <item itemvalue="Application.SimulacionJuego" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +120,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Decuimales listos" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decuimales listos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
