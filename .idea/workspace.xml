@@ -7,8 +7,9 @@
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
       <change afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/VerticeIndividuoRecurso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2grg26R7W2bybiMiG9wPF3xqi9o" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,7 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SimulacionJuego.executor": "Run",
+    "Application.SimulacionJuego.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Miguel",
@@ -93,5 +94,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Decuimales listos" />
     <option name="LAST_COMMIT_MESSAGE" value="Decuimales listos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

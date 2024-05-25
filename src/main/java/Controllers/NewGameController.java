@@ -1,9 +1,13 @@
 package Controllers;
 
+import EstructurasDeDatos.ListaSimple;
 import Parameter.Properties.IndividuoModelProperties;
 import Parameter.Properties.RecursosModelProperties;
 import Parameter.Properties.TableroModelProperties;
+import PartidasGuardadas.FileReaderPartidas;
+import com.example.demo.Partida;
 import com.example.demo.StartApplication;
+import individuo.Individuo;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -19,6 +23,7 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
+import constantes.Constantes;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -26,7 +31,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import static constantes.Constantes.*;
+
 public class NewGameController implements Initializable{
+    private Constantes constante;
     @FXML
     private TabPane recursos;
     /**Sliders:**/
@@ -39,6 +48,8 @@ public class NewGameController implements Initializable{
     protected Slider muerteIndividuoSlider;
     @FXML
     protected Slider clonacionIndividuoSlider;
+    @FXML
+    protected Slider nIndivSlider;
     //Recursos:
     @FXML
     protected Slider aguaVidaSlider;
@@ -109,6 +120,9 @@ public class NewGameController implements Initializable{
     protected Label individuoMuerteValue;
     @FXML
     protected Label individuoClonacionValue;
+    @FXML
+    protected Label nIndivValue;
+
     //Recursos
     @FXML
     protected Label aguaVidaValue;
@@ -172,7 +186,7 @@ public class NewGameController implements Initializable{
     /**Tablero**/
     @FXML
     protected GridPane tablero;
-
+    public GridPane getTablero(){return tablero;}
     /**Models**/
     private Stage stage;
     private IndividuoModelProperties individuoModel;
@@ -190,6 +204,7 @@ public class NewGameController implements Initializable{
     protected IntegerProperty medidaIndividuoReproduccion = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaIndividuoMuerte = new SimpleIntegerProperty(100);
     protected IntegerProperty medidaIndividuoClonacion = new SimpleIntegerProperty(0);
+    protected IntegerProperty medidaNIndiv = new SimpleIntegerProperty(0);
     //Recursos
     protected IntegerProperty medidaAguaVida = new SimpleIntegerProperty(0);
     protected IntegerProperty medidaAguaReproduccion = new SimpleIntegerProperty(0);
@@ -248,6 +263,9 @@ public class NewGameController implements Initializable{
 
         clonacionIndividuoSlider.valueProperty().bindBidirectional(medidaIndividuoClonacion);
         individuoClonacionValue.textProperty().bind(medidaIndividuoClonacion.asString());
+
+        nIndivSlider.valueProperty().bindBidirectional(medidaNIndiv);
+        nIndivValue.textProperty().bind(medidaNIndiv.asString());
 
         //**Agua**//
         aguaVidaSlider.valueProperty().bindBidirectional(medidaAguaVida);
@@ -442,8 +460,8 @@ public class NewGameController implements Initializable{
         tablero.getRowConstraints().clear();
         tablero.getColumnConstraints().clear();
 
-        double totalHeight = 250;
-        double totalWidth = 310;
+        double totalHeight = 250.0;
+        double totalWidth = 310.0;
         tablero.setPrefHeight(totalHeight);
         tablero.setPrefWidth(totalWidth);
         tablero.setMaxHeight(totalHeight);
@@ -502,20 +520,48 @@ public class NewGameController implements Initializable{
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            abrirJuego();
+            Partida nuevaPartida = new Partida((int) medidaColumnas.get(), (int)medidaFilas.get(), (int)medidaAguaVida.get(), medidaAguaClonacion.get()/100.0, medidaAguaReproduccion.get()/100.0, medidaAguaMuerte.get()/100.0, (int)medidaBibliotecaVida.get(), medidaBibliotecaClonacion.get()/100.0, medidaBibliotecaReproduccion.get()/100.0, medidaBibliotecaMuerte.get()/100.0,
+                    (int)medidaComidaVida.get(), medidaComidaClonacion.get()/100.0, medidaComidaReproduccion.get()/100.0, medidaComidaMuerte.get()/100.0, (int)medidaMontañaVida.get(), medidaMontañaClonacion.get()/100.0, medidaMontañaReproduccion.get()/100.0, medidaMontañaMuerte.get()/100.0,
+                    (int)medidaAguaVida.get(), medidaPozoClonacion.get()/100.0, medidaAguaReproduccion.get()/100.0, medidaPozoMuerte.get()/100.0, (int)medidaTesoroVida.get(), medidaTesoroClonacion.get()/100.0, medidaTesoroReproduccion.get()/100.0, medidaTesoroMuerte.get()/100.0,
+                    (int)medidaIndividuoVida.get(), medidaIndividuoClonacion.get()/100.0, medidaIndividuoReproduccion.get()/100.0, medidaIndividuoMuerte.get()/100.0);
+            abrirJuego(nuevaPartida);
         }
     }
-    private void abrirJuego(){
+    private void abrirJuego(Partida nuevaPartida){
         FXMLLoader fxmlLoader = new FXMLLoader(StartApplication.class.getResource("game-view.fxml"));
         try{
-            Scene scene = new Scene(fxmlLoader.load(), 800, 800);
+            Scene scene = new Scene(fxmlLoader.load(), 700, 700);
             stage.setTitle("El juego de la vida: "+ nombrePartida.getText());
             stage.setScene(scene);
             GameController gameController = fxmlLoader.getController();
+            ListaSimple<Individuo> listaIndividuos = listaIndividuos();
+            gameController.getTableroModel().setListaVivosIndividuos(listaIndividuos);
             gameController.setStage(stage);
+            gameController.setModeloPartida(nuevaPartida);
             stage.show();
         } catch (Exception e){
             e.printStackTrace();
         }
+    }
+    private ListaSimple<Individuo> listaIndividuos(){
+        ListaSimple<Individuo> listaIndividuos = new ListaSimple<>();
+        String filepath ="C:\\Users\\santi\\Documents\\ESTRUCTURADATOS\\Proyecto-Final\\src\\main\\java\\PartidasGuardadas\\NombresIndividuos";
+        ListaSimple<String> listaNombresTotal = FileReaderPartidas.cargarNombresIndividuos(filepath);
+        ListaSimple<String> listaNombres = new ListaSimple<>();
+        for (int i= 0; i < medidaNIndiv.get();i++){
+             listaNombres.add(listaNombresTotal.get(i));
+        }
+        for (int j = 0; j < listaNombres.getNumeroElementos();j++ ){
+            Individuo individuo;
+            if (j % 2 == 0 && j % 3 != 0){
+                 individuo = new Individuo(listaNombres.get(j),0,(int) medidaAguaVida.get(), medidaAguaReproduccion.get(),medidaAguaClonacion.get(),IND_BASICO );
+            } else if(j % 3 == 0){
+                 individuo = new Individuo(listaNombres.get(j),0,(int) medidaAguaVida.get(), medidaAguaReproduccion.get(),medidaAguaClonacion.get(),IND_NORMAL );
+            } else {
+                 individuo = new Individuo(listaNombres.get(j),0,(int) medidaAguaVida.get(), medidaAguaReproduccion.get(),medidaAguaClonacion.get(),IND_AVANZADO);
+            }
+            listaIndividuos.add(individuo);
+        }
+        return listaIndividuos;
     }
 }
