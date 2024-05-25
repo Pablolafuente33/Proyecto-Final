@@ -28,7 +28,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.SimulacionJuego.executor": "Debug",
+    "Application.SimulacionJuego.executor": "Run",
+    "Application.StartApplication.executor": "Run",
+    "JUnit.AguaTest.executor": "Run",
+    "JUnit.AleatoriedadControllerTest.executor": "Run",
+    "JUnit.BibliotecaTest.executor": "Run",
+    "JUnit.BusquedaControllerTest.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarIndividuo.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarRecurso.executor": "Run",
+    "JUnit.CasillaTest.executor": "Run",
+    "JUnit.ComidaTest.executor": "Run",
+    "JUnit.IndividuoModelPropertiesTest.executor": "Run",
+    "JUnit.IndividuoTest.executor": "Run",
+    "JUnit.ListaEnlazadaTest.executor": "Run",
+    "JUnit.ListaSimpleTest.add.executor": "Run",
+    "JUnit.ListaSimpleTest.executor": "Run",
+    "JUnit.MontañaTest.executor": "Run",
+    "JUnit.MovimientoControllerTest.executor": "Run",
+    "JUnit.MovimientoTest.executor": "Run",
+    "JUnit.NodoLETest.executor": "Run",
+    "JUnit.PilaTest.executor": "Run",
+    "JUnit.PosicionTest.executor": "Run",
+    "JUnit.PozoTest.executor": "Run",
+    "JUnit.PrintControllerTest.executor": "Run",
+    "JUnit.PropertiesNuevosIndividuosTest.executor": "Run",
+    "JUnit.RecursoControllerTest.executor": "Run",
+    "JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor": "Run",
+    "JUnit.RecursoTest.executor": "Run",
+    "JUnit.RecursosModelPropertiesTest.executor": "Run",
+    "JUnit.TableroTest.executor": "Run",
+    "JUnit.TesoroTest.executor": "Run",
+    "JUnit.VidaControllerTest.executor": "Run",
+    "JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor": "Run",
+    "JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor": "Run",
+    "JUnit.VidaControllerTest.testMuerteIndividuo.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Miguel",
@@ -75,7 +109,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716460907112</updated>
-      <workItem from="1716460910604" duration="3318000" />
+      <workItem from="1716460910604" duration="4002000" />
+      <workItem from="1716546971980" duration="27651000" />
+      <workItem from="1716660012596" duration="7349000" />
     </task>
     <servers />
   </component>
