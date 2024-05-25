@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Interface">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/PartidaModelProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/DiagramaClases.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DiagramaClases.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/NewGameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parameter/Properties/TableroModelProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/FileReaderPartidas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/FileReaderPartidas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartidasGuardadas/PartidasGuardadas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Movimiento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Partida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/game-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/demo/newGame-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Interface" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716460907112</updated>
       <workItem from="1716460910604" duration="3318000" />
-      <workItem from="1716654094409" duration="15124000" />
+      <workItem from="1716654094409" duration="15435000" />
     </task>
     <task id="LOCAL-00001" summary="Interface">
       <option name="closed" value="true" />
@@ -123,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716652099237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Interface">
+      <option name="closed" value="true" />
+      <created>1716669805573</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716669805573</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
