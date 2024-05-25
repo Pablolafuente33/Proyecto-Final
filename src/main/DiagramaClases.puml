@@ -689,7 +689,103 @@ class Montaña {
     + getMuerte(): int
     + setMuerte(muerte: int): void
 }
+class Pozo {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
 
+    + Pozo(vida: int, reproduccion: int, muerte: int, clonacion: int)
+    + getVida(): int
+    + setVida(vida: int): void
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+class Tesoro {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
+
+    + Tesoro(vida: int, reproduccion: int, muerte: int, clonacion: int)
+    + getVida(): int
+    + setVida(vida: int): void
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+class Casilla {
+    - listaIndividuos: ListaSimple<Individuo>
+    - listaRecursos: ListaSimple<Recurso>
+    - posicion: Posicion
+
+    + Casilla(posicion: Posicion, listaIndividuos: ListaSimple<Individuo>, listaRecursos: ListaSimple<Recurso>)
+    + Casilla()
+    + Casilla(posicion: Posicion)
+    + getPosicion(): Posicion
+    + setPosicion(posicion: Posicion): void
+    + getListaIndividuos(): ListaSimple<Individuo>
+    + setListaIndividuos(listaIndividuos: ListaSimple<Individuo>): void
+    + getListaRecursos(): ListaSimple<Recurso>
+    + setListaRecursos(listaRecursos: ListaSimple<Recurso>): void
+}
+class Tablero {
+    - filas: int
+    - columnas: int
+    - casillas: ListaSimple<ListaSimple<Casilla>>
+    - listaTodosIndividuos: ListaSimple<Individuo>
+    - listaVivosIndividuos: ListaSimple<Individuo>
+    - listaMuertosIndividuos: ListaSimple<Individuo>
+    - listaRecursosUnicos: ListaSimple<Recurso>
+    - listaRecursosON: ListaSimple<Recurso>
+    - listaRecursosOFF: ListaSimple<Recurso>
+    - listaOperacionesReproducccion: ListaSimple<String>
+    - listaOperacionesClonacion: ListaSimple<String>
+    - listaOperacionesNacimiento: ListaSimple<String>
+    - listaOperacionesMuerte: ListaSimple<String>
+    - listaOperacionesIteraccionRecurso: ListaSimple<String>
+
+    + Tablero(int filas, int columnas)
+    + getFilas(): int
+    + setFilas(int filas): void
+    + getColumnas(): int
+    + setColumnas(int columnas): void
+    + getCasillas(): ListaSimple<ListaSimple<Casilla>>
+    + setCasillas(ListaSimple<ListaSimple<Casilla>> casillas): void
+    + getCasillaFilaColumna(int fila, int columna): Casilla
+    + setCasillaFilaColumna(int fila, int columna, Casilla casilla): void
+    + getListaTodosIndividuos(): ListaSimple<Individuo>
+    + setListaTodosIndividuos(ListaSimple<Individuo> individuos): void
+    + getListaVivosIndividuos(): ListaSimple<Individuo>
+    + setListaVivosIndividuos(ListaSimple<Individuo> listaVivosIndividuos): void
+    + getListaMuertosIndividuos(): ListaSimple<Individuo>
+    + setListaMuertosIndividuos(ListaSimple<Individuo> individuos): void
+    + getListaRecursosUnicos(): ListaSimple<Recurso>
+    + setListaRecursosUnicos(ListaSimple<Recurso> listaRecursosUnicos): void
+    + getListaRecursosON(): ListaSimple<Recurso>
+    + setListaRecursosON(ListaSimple<Recurso> listaRecursosON): void
+    + getListaRecursosOFF(): ListaSimple<Recurso>
+    + setListaRecursosOFF(ListaSimple<Recurso> listaRecursosOFF): void
+    + getListaOperacionesReproducccion(): ListaSimple<String>
+    + setListaOperacionesReproducccion(ListaSimple<String> listaOperacionesReproducccion): void
+    + getListaOperacionesClonacion(): ListaSimple<String>
+    + setListaOperacionesClonacion(ListaSimple<String> listaOperacionesClonacion): void
+    + getListaOperacionesNacimiento(): ListaSimple<String>
+    + setListaOperacionesNacimiento(ListaSimple<String> listaOperacionesNacimiento): void
+    + getListaOperacionesMuerte(): ListaSimple<String>
+    + setListaOperacionesMuerte(ListaSimple<String> listaOperacionesMuerte): void
+    + getListaOperacionesIteraccionRecurso(): ListaSimple<String>
+    + setListaOperacionesIteraccionRecurso(ListaSimple<String> listaOperacionesIteraccionRecurso): void
+}
+Recurso <|-- Tesoro
+Recurso <|-- Pozo
 Recurso <|-- Montaña
 Recurso <|-- Comida
 Recurso <|-- Agua
