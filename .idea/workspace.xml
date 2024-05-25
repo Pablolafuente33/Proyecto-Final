@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
+      <change afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/VerticeIndividuoRecurso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/Grafo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716460907112</updated>
       <workItem from="1716460910604" duration="4002000" />
-      <workItem from="1716546971980" duration="5725000" />
+      <workItem from="1716546971980" duration="27651000" />
     </task>
     <servers />
   </component>
