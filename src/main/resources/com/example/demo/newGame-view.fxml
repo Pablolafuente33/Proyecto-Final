@@ -58,6 +58,17 @@
                                     <Label fx:id="individuoClonacionValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>
+                              <Label text="Nº de individuos iniciales">
+                                 <font>
+                                    <Font name="Centaur" size="18.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="197.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
+                                 <children>
+                                    <Slider fx:id="nIndivSlider" majorTickUnit="1.0" max="10.0" min="2.0" minorTickCount="1" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Label fx:id="nIndivValue" contentDisplay="RIGHT" text="--" />
+                                 </children>
+                              </HBox>
                            </children>
                         </VBox>
                         <Label alignment="CENTER" layoutX="53.0" layoutY="14.0" text="Configure las caracteristicas iniciales del individuo:">
@@ -447,22 +458,22 @@
                                           <Font name="Centaur" size="16.0" />
                                        </font>
                                     </Label>
-                                    <Slider fx:id="filasSlider" blockIncrement="1.0" majorTickUnit="10.0" max="50.0" min="10.0" minorTickCount="10" nodeOrientation="RIGHT_TO_LEFT" orientation="VERTICAL" prefWidth="36.0" showTickLabels="true" />
+                                    <Slider fx:id="filasSlider" blockIncrement="1.0" majorTickUnit="5.0" max="25.0" min="5.0" minorTickCount="5" nodeOrientation="RIGHT_TO_LEFT" orientation="VERTICAL" prefWidth="36.0" showTickLabels="true" />
                                  </children>
                               </HBox>
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <children>
-                                    <Slider fx:id="columnasSlider" blockIncrement="1.0" majorTickUnit="10.0" max="50.0" min="10.0" minorTickCount="10" showTickLabels="true" />
+                                    <Slider fx:id="columnasSlider" blockIncrement="1.0" majorTickUnit="5.0" max="25.0" min="5.0" minorTickCount="5" showTickLabels="true" />
                                     <Label text="Columnas" />
                                  </children>
                               </VBox>
-                              <AnchorPane maxHeight="336.0" minHeight="0.0" minWidth="0.0" maxWidth="0.0" GridPane.columnIndex="1">
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                                  <children>
-                                    <GridPane fx:id="tablero" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="-1.0" prefHeight="250.0" prefWidth="310.0">
+                                    <GridPane fx:id="tablero" alignment="BOTTOM_LEFT" prefHeight="250.0" prefWidth="310.0">
                                       <columnConstraints>
                                         <ColumnConstraints />
                                         <ColumnConstraints />
-                                          <ColumnConstraints/>
+                                          <ColumnConstraints />
                                       </columnConstraints>
                                       <rowConstraints>
                                         <RowConstraints />
@@ -470,7 +481,7 @@
                                       </rowConstraints>
                                     </GridPane>
                                  </children>
-                              </AnchorPane>
+                              </VBox>
                            </children>
                         </GridPane>
                      </children></AnchorPane>

@@ -57,4 +57,19 @@ public class FileReaderPartidas {
         }
         return nombrePartidas;
     }
+    public static ListaSimple<String> cargarNombresIndividuos(String file){
+        ListaSimple<String> nombres = new ListaSimple<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))){
+            String line = reader.readLine();
+            while (line != null){
+                String nombre = line.trim();
+                if (!nombre.isEmpty()){ // Evitamos agregar lineas vacias.
+                    nombres.add(nombre);
+                }
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return nombres;
+    }
 }
