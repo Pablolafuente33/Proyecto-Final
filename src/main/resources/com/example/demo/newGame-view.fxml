@@ -65,7 +65,7 @@
                               </Label>
                               <HBox alignment="CENTER" layoutX="10.0" layoutY="197.0" prefHeight="29.0" prefWidth="264.0" spacing="10.0">
                                  <children>
-                                    <Slider fx:id="nIndivSlider" majorTickUnit="1.0" max="10.0" min="2.0" minorTickCount="1" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" />
+                                    <Slider fx:id="nIndivSlider" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="1" prefHeight="33.0" prefWidth="183.0" showTickLabels="true" value="2.0" />
                                     <Label fx:id="nIndivValue" contentDisplay="RIGHT" text="--" />
                                  </children>
                               </HBox>

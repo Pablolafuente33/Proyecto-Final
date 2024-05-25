@@ -1,48 +1,147 @@
 @startuml
-'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+class Partida {
+    - int medidaColumnas
+    - int medidaFilas
+    - int medidaAguaVida
+    - double medidaAguaClonacion
+    - double medidaAguaReproduccion
+    - double medidaAguaMuerte
+    - int medidaBibliotecaVida
+    - double medidaBibliotecaClonacion
+    - double medidaBibliotecaReproduccion
+    - double medidaBibliotecaMuerte
+    - int medidaComidaVida
+    - double medidaComidaClonacion
+    - double medidaComidaReproduccion
+    - double medidaComidaMuerte
+    - int medidaMontañaVida
+    - double medidaMontañaClonacion
+    - double medidaMontañaReproduccion
+    - double medidaMontañaMuerte
+    - int medidaPozoVida
+    - double medidaPozoClonacion
+    - double medidaPozoReproduccion
+    - double medidaPozoMuerte
+    - int medidaTesoroVida
+    - double medidaTesoroClonacion
+    - double medidaTesoroReproduccion
+    - double medidaTesoroMuerte
+    - int medidaIndividuoVida
+    - double medidaIndividuoClonacion
+    - double medidaIndividuoReproduccion
+    - double medidaIndividuoMuerte
+    - ListaSimple<Individuo> listaIndividuos
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class Individuo {
-    -id: int
-    -generacion: int
-    -turnosDeVida: int
-    -probabilidadReproducción: int
-    -probabilidadClonacion: int
-    -probabilidadMuerte: int
-    -tipo: String
-    +moverse(): String
-    +reproducirse(individuo Individuo):
-    +clonarse():
+    + Partida()
+    + ListaSimple<Individuo> getListaIndividuos()
+    + int getMedidaColumnas()
+    + void setMedidaColumnas(int medidaColumnas)
+    + int getMedidaFilas()
+    + void setMedidaFilas(int medidaFilas)
+    + int getMedidaAguaVida()
+    + void setMedidaAguaVida(int medidaAguaVida)
+    + double getMedidaAguaClonacion()
+    + void setMedidaAguaClonacion(double medidaAguaClonacion)
+    + double getMedidaAguaReproduccion()
+    + void setMedidaAguaReproduccion(double medidaAguaReproduccion)
+    + double getMedidaAguaMuerte()
+    + void setMedidaAguaMuerte(double medidaAguaMuerte)
+    + int getMedidaBibliotecaVida()
+    + void setMedidaBibliotecaVida(int medidaBibliotecaVida)
+    + double getMedidaBibliotecaClonacion()
+    + void setMedidaBibliotecaClonacion(double medidaBibliotecaClonacion)
+    + double getMedidaBibliotecaReproduccion()
+    + void setMedidaBibliotecaReproduccion(double medidaBibliotecaReproduccion)
+    + double getMedidaBibliotecaMuerte()
+    + void setMedidaBibliotecaMuerte(double medidaBibliotecaMuerte)
+    + int getMedidaComidaVida()
+    + void setMedidaComidaVida(int medidaComidaVida)
+    + double getMedidaComidaClonacion()
+    + void setMedidaComidaClonacion(double medidaComidaClonacion)
+    + double getMedidaComidaReproduccion()
+    + void setMedidaComidaReproduccion(double medidaComidaReproduccion)
+    + double getMedidaComidaMuerte()
+    + void setMedidaComidaMuerte(double medidaComidaMuerte)
+    + int getMedidaMontañaVida()
+    + void setMedidaMontañaVida(int medidaMontañaVida)
+    + double getMedidaMontañaClonacion()
+    + void setMedidaMontañaClonacion(double medidaMontañaClonacion)
+    + double getMedidaMontañaReproduccion()
+    + void setMedidaMontañaReproduccion(double medidaMontañaReproduccion)
+    + double getMedidaMontañaMuerte()
+    + void setMedidaMontañaMuerte(double medidaMontañaMuerte)
+    + int getMedidaTesoroVida()
+    + void setMedidaTesoroVida(int medidaTesoroVida)
+    + double getMedidaTesoroClonacion()
+    + void setMedidaTesoroClonacion(double medidaTesoroClonacion)
+    + double getMedidaTesoroReproduccion()
+    + void setMedidaTesoroReproduccion()
+    }
+    class StartApplication {
+        + main(String[] args): void
+        + start(Stage stage): void
+    }
+    class Posicion {
+        - int x
+        - int y
+        + Posicion(int x, int y)
+        + getX(): int
+        + setX(int x): void
+        + getY(): int
+        + setY(int y): void
+    }
+class Constantes {
+    - Constantes()
+    + IND_BASICO: String
+    + IND_NORMAL: String
+    + IND_AVANZADO: String
+    + PRIORIDAD_TIPOS_INDIVIDUOS: ListaSimple<String>
+    + OPER_NACIMIENTO: String
+    + OPER_REPRODUCCION: String
+    + OPER_CLONACION: String
+    + OPER_MUERTE: String
+    + OPER_ITERACCION: String
+    }
+class AleatoriedadController {
+    + generarRndInt(int min, int max): int
+    + sortearAccion(double prob): boolean
+    + numeroAzar(): double
 }
-class Tablero{
-    -tamaño
-    -individuos:
-    -recursos: List []
-    +actualizar()
-    +reproducirIndividuos(individuo1 Individuo, individuo2 Individuo)
-    +moverIndividuo(individuo Individuo)
-
+class BusquedaController {
+    + buscarIndividuo(Tablero tablero, Individuo individuo): Casilla
+    + buscarRecurso(Tablero tablero, Recurso recurso): Casilla
+    + buscarCasillaRecursoMasCercano(Posicion actPos, ListaSimple<Casilla> listaPosiblesCasillas): Casilla
+    + calcularDistancia(Posicion actPos, Posicion destPos): double
 }
-
-class Movimiento{
-
+class ChargeGameController {
+    - partidas: VBox
+    - stage: Stage
+    + getPartidas(): VBox
+    + getStage(): Stage
+    + setStage(Stage stage): void
 }
-Movimiento <-- Individuo: Puede
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class Controller {
+    - stage: Stage
+    - parametrosDataIndividuo: Individuo
+    - parameterDataAgua: Agua
+    - parameterDataBiblioteca: Biblioteca
+    - parameterDataComida: Comida
+    - parameterDataMontaña: Montaña
+    - parameterDataPozo: Pozo
+    - parameterDataTesoro: Tesoro
+    - parameterDataTablero: Tablero
+    - modeloParaGUICompartidoIndividuo: IndividuoModelProperties
+    - modeloParaGUICompartidoAgua: RecursosModelProperties
+    - modeloParaGUICompartidoBiblioteca: RecursosModelProperties
+    - modeloParaGUICompartidoComida: RecursosModelProperties
+    - modeloParaGUICompartidoMontaña: RecursosModelProperties
+    - modeloParaGUICompartidoPozo: RecursosModelProperties
+    - modeloParaGUICompartidoTesoro: RecursosModelProperties
+    - modeloParaGUICompartidoTablero: TableroModelProperties
+    - chargeError: Label
+    + onNewGameButtonClick(): void
+    + onChargeGameButtonClick(): void
 }
-
+    Application <|-- StartApplication
 @enduml
