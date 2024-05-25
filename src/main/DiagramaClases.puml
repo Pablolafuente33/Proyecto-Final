@@ -143,5 +143,568 @@ class Controller {
     + onNewGameButtonClick(): void
     + onChargeGameButtonClick(): void
 }
+class GameController {
+    - probAparicionNuevoRecurso: double
+    - turno: int
+    - medidaTurno: IntegerProperty
+    - turnoValue: Label
+    - maximoTurnos: int
+    - tablero: GridPane
+    - tableroModel: Tablero
+    - tableroContainer: VBox
+    - modeloPartida: Partida
+    - stage: Stage
+    - comenzar: Button
+    - reanudar: Button
+    - pausar: Button
+    + getTableroModel(): Tablero
+    + setTablero(GridPane): void
+    + setModeloPartida(Partida): void
+    + setStage(Stage): void
+    + pausarButton(): void
+    + comenzarButton(): void
+    - insertarElementos(GridPane): void
+    - tableroParametrizable(): void
+    - inicializarTablero(): void
+    - Bucle(): void
+    - actualizarUIIndividuo(Individuo, Posicion): void
+    }
+class MovimientoController {
+        + accionMovimiento(Tablero, Individuo): void
+        - movimientoIndividuo(Individuo, Casilla, Casilla): void
+        + obtenerPosicionesPermitidas(Casilla, int, int, boolean): ListaSimple<int[]>
+        - hallarPosicionPermitidaMasCercanaRecurso(ListaSimple<int[]>, Posicion): Posicion
+        }
+class NewGameController {
+    - Constantes constante
+    - Tablero parameterDataTablero
+    - TableroModelProperties modeloParaGuiTablero
+    - TabPane recursos
+    - Slider vidaIndividuoSlider
+    - Slider reproduccionIndividuoSlider
+    - Slider muerteIndividuoSlider
+    - Slider clonacionIndividuoSlider
+    - Slider nIndivSlider
+    - Slider aguaVidaSlider
+    - Slider aguaReproduccionSlider
+    - Slider aguaMuerteSlider
+    - Slider aguaClonacionSlider
+    - Slider bibliotecaVidaSlider
+    - Slider bibliotecaReproduccionSlider
+    - Slider bibliotecaMuerteSlider
+    - Slider bibliotecaClonacionSlider
+    - Slider comidaVidaSlider
+    - Slider comidaReproduccionSlider
+    - Slider comidaMuerteSlider
+    - Slider comidaClonacionSlider
+    - Slider montañaVidaSlider
+    - Slider montañaReproduccionSlider
+    - Slider montañaMuerteSlider
+    - Slider montañaClonacionSlider
+    - Slider pozoVidaSlider
+    - Slider pozoReproduccionSlider
+    - Slider pozoMuerteSlider
+    - Slider pozoClonacionSlider
+    - Slider tesoroVidaSlider
+    - Slider tesoroReproduccionSlider
+    - Slider tesoroMuerteSlider
+    - Slider tesoroClonacionSlider
+    - Slider columnasSlider
+    - Slider filasSlider
+    - Label individuoVidaValue
+    - Label individuoReproduccionValue
+    - Label individuoMuerteValue
+    - Label individuoClonacionValue
+    - Label nIndivValue
+    - Label aguaVidaValue
+    - Label aguaReproduccionValue
+    - Label aguaMuerteValue
+    - Label aguaClonacionValue
+    - Label bibliotecaVidaValue
+    - Label bibliotecaReproduccionValue
+    - Label bibliotecaMuerteValue
+    - Label bibliotecaClonacionValue
+    - Label comidaVidaValue
+    - Label comidaReproduccionValue
+    - Label comidaMuerteValue
+    - Label comidaClonacionValue
+    - Label montañaVidaValue
+    - Label montañaReproduccionValue
+    - Label montañaMuerteValue
+    - Label montañaClonacionValue
+    - Label pozoVidaValue
+    - Label pozoReproduccionValue
+    - Label pozoMuerteValue
+    - Label pozoClonacionValue
+    - Label tesoroVidaValue
+    - Label tesoroReproduccionValue
+    - Label tesoroMuerteValue
+    - Label tesoroClonacionValue
+    - Label nameError
+    - TextField nombrePartida
+    - GridPane tablero
+    - Stage stage
+    - IndividuoModelProperties individuoModel
+    - RecursosModelProperties aguaModel
+    - RecursosModelProperties bibliotecaModel
+    - RecursosModelProperties comidaModel
+    - RecursosModelProperties montañaModel
+    - RecursosModelProperties pozoModel
+    - RecursosModelProperties tesoroModel
+    - TableroModelProperties tableroModel
+    - IntegerProperty medidaIndividuoVida
+    - IntegerProperty medidaIndividuoReproduccion
+    - IntegerProperty medidaIndividuoMuerte
+    - IntegerProperty medidaIndividuoClonacion
+    - IntegerProperty medidaNIndiv
+    - IntegerProperty medidaAguaVida
+    - IntegerProperty medidaAguaReproduccion
+    - IntegerProperty medidaAguaMuerte
+    - IntegerProperty medidaAguaClonacion
+    - IntegerProperty medidaBibliotecaVida
+    - IntegerProperty medidaBibliotecaReproduccion
+    - IntegerProperty medidaBibliotecaMuerte
+    - IntegerProperty medidaBibliotecaClonacion
+    - IntegerProperty medidaComidaVida
+    - IntegerProperty medidaComidaReproduccion
+    - IntegerProperty medidaComidaMuerte
+    - IntegerProperty medidaComidaClonacion
+    - IntegerProperty medidaMontañaVida
+    - IntegerProperty medidaMontañaReproduccion
+    - IntegerProperty medidaMontañaMuerte
+    - IntegerProperty medidaMontañaClonacion
+    - IntegerProperty medidaPozoVida
+    - IntegerProperty medidaPozoReproduccion
+    - IntegerProperty medidaPozoMuerte
+    - IntegerProperty medidaPozoClonacion
+    - IntegerProperty medidaTesoroVida
+    - IntegerProperty medidaTesoroReproduccion
+    - IntegerProperty medidaTesoroMuerte
+    - IntegerProperty medidaTesoroClonacion
+    - IntegerProperty medidaFilas
+    - IntegerProperty medidaColumnas
+
+    + initialize(URL, ResourceBundle)
+    + setStage(Stage)
+    + updateGUIWithModel()
+    + loadUserData(IndividuoModelProperties, RecursosModelProperties, RecursosModelProperties, RecursosModelProperties, RecursosModelProperties, RecursosModelProperties, RecursosModelProperties, TableroModelProperties)
+    + guardarButton()
+    + abrirJuego(Partida)
+    + listaIndividuos()
+    + crearIndividuo(String, int)
+}
+class PrintController {
+    + printPosicion(Posicion): String
+}
+class RecursoController {
+    + fijarRecursoIndividuo(Tablero, Individuo): void
+    + sortearNuevoRecurso(ListaSimple<Recurso>): Recurso
+}
+class VidaController {
+    + actualizarTurnosVidaIndividuos(Tablero, Casilla, int): void
+    + muerteIndividuo(Tablero, Casilla, Individuo, int): void
+    + actualizarTurnosVidaRecursos(Tablero, Casilla): void
+    + muerteRecurso(Tablero, Casilla, Recurso): void
+    + nacimientoRecurso(Tablero, Recurso): void
+    + iteraccionIndividuoRecurso(Tablero, Casilla, int): void
+    + reproduccionIndividuos(Tablero, Individuo, Individuo, PropertiesNuevosIndividuos, int): Individuo
+    + clonacionIndividuos(Tablero, Individuo, int): Individuo
+    + nacimientoIndividuo(Tablero, Individuo): void
+    + limpiarViejosIndividuos(Tablero, Casilla, int): void
+    - buscarMasViejoIndividuo(ListaSimple<Individuo>): Individuo
+}
+class Arco<T> {
+    - origen: Vertice<T>
+    - destino: Vertice<T>
+    - coste: double
+
+    + Arco(origen: Vertice<T>, destino: Vertice<T>, coste: double)
+    + Arco()
+    + getOrigen(): Vertice<T>
+    + setOrigen(origen: Vertice<T>): void
+    + getDestino(): Vertice<T>
+    + setDestino(destino: Vertice<T>): void
+    + getCoste(): double
+    + setCoste(coste: double): void
+}
+class Camino<T> {
+    - camino: ListaSimple<Vertice<T>>
+    - coste: double
+
+    + Camino(camino: ListaSimple<Vertice<T>>, coste: double)
+    + setCamino(camino: ListaSimple<Vertice<T>>): void
+    + setCoste(coste: double): void
+    + getCamino(): ListaSimple<Vertice<T>>
+    + getCoste(): double
+    + toString(): String
+}
+class Grafo<T> {
+    - vertices: ListaSimple<Vertice<T>>
+    - arcos: ListaSimple<Arco<T>>
+    + Grafo()
+    + agregarVertice(vertice: Vertice<T>): void
+    + agregarArco(arco: Arco<T>): void
+    + getVertices(): ListaSimple<Vertice<T>>
+    + getArcos(): ListaSimple<Arco<T>>
+}
+class Vertice<T> {
+    - data: T
+    - arcosEntrada: ListaSimple<Arco<T>>
+    - arcosSalida: ListaSimple<Arco<T>>
+    + Vertice(data: T)
+    + getData(): T
+    + setData(data: T): void
+    + getArcosEntrada(): ListaSimple<Arco<T>>
+    + getArcosSalida(): ListaSimple<Arco<T>>
+    + setArcosEntrada(arcosEntrada: ListaSimple<Arco<T>>): void
+    + setArcosSalida(arcosSalida: ListaSimple<Arco<T>>): void
+    + addOutEdge(arco: Arco<T>): void
+    + addInEdge(arco: Arco<T>): void
+}
+class HashMap<K, V> {
+    - max: int
+    - tabla: NodoHM<K, V>[]
+    + HashMap()
+    + put(clave: K, value: V): void
+    + hash(key: K): int
+    + get(clave: K): V
+    + remove(clave: K): void
+}
+class NodoHM<K, V> {
+    - clave: K
+    - value: V
+    - siguiente: NodoHM<K, V>
+}
+class ListaEnlazada<T> {
+    - primero: NodoLE<T>
+    + ListaEnlazada()
+    + ListaEnlazada(primero: NodoLE<T>)
+    + isVacia(): boolean
+    + getPrimero(): NodoLE<T>
+    + getUltimo(): NodoLE<T>
+    + add(dato: T): void
+    + insert(dato: T, pos: int): void
+}
+class NodoLE<T> {
+    - dato: T
+    - siguiente: NodoLE<T>
+}
+class ListaSimple<T>{
+    - elemento: NodoLS[]
+    - max: int
+    + ListaSimple(max: int)
+    + ListaSimple()
+    + getElemento(): NodoLS[]
+    + setElemento(elemento: NodoLS[]): void
+    + getMax(): int
+    + setMax(max: int): void
+    + isVacia(): boolean
+    + vaciar(): void
+    + get(index: int): T
+    + set(index: int, value: T): void
+    + add(o: T): void
+    + addNodoLS(nodoLS: NodoLS): void
+    + getSiguiente(el: NodoLS<T>): NodoLS<T>
+    + getNumeroElementos(): int
+    + iterator(): Iterator<T>
+    + remove(o: T): boolean
+    + reverse(): ListaSimple<T>
+    + getFirst(): NodoLS<T>
+    + getLast(): NodoLS<T>
+    + contains(dato: T): boolean
+    + addAll(otraLista: ListaSimple<T>): void
+    + of(...elementos: T[]): ListaSimple<T>
+    + indexOf(o: T): int
+}
+class NodoLS<T> {
+    - dato: T
+    - siguiente: NodoLS<T>
+}
+class Iterator<T> {
+    + hasNext(): boolean
+    + next(): T
+    + remove(): void
+}
+class Pila<T> {
+        - cima: NodoLE<T>
+        + Pila()
+        + Pila(nodo: NodoLE<T>)
+        + isVacia(): boolean
+        + push(dato: T): void
+        + pop(): T
+        + vaciar(): void
+    }
+class Individuo {
+    - id: String
+    - turnoGeneracion: int
+    - turnosVida: int
+    - maxTurnosVida: int
+    - turnoMuerte: int
+    - probabilidadReproduccion: double
+    - probabilidadClonacion: double
+    - probabilidadMuerte: double
+    - tipo: String
+    - operaciones: ListaSimple<String>
+    - fijadoRecursoPosicion: Posicion
+    - posicion: Posicion
+
+    + Individuo(id: String, turnoGeneracion: int, turnosVida: int, probabilidadReproduccion: double, probabilidadClonacion: double, tipo: String)
+    + getId(): String
+    + setId(id: String): void
+    + getTurnoGeneracion(): int
+    + setTurnoGeneracion(turnoGeneracion: int): void
+    + getTurnoMuerte(): int
+    + setTurnoMuerte(turnoMuerte: int): void
+    + getTurnosVida(): int
+    + setTurnosVida(turnosVida: int): void
+    + getProbabilidadReproduccion(): double
+    + setProbabilidadReproduccion(probabilidadReproduccion: double): void
+    + getProbabilidadMuerte(): double
+    + setProbabilidadMuerte(probabilidadMuerte: double): void
+    + getProbabilidadClonacion(): double
+    + setProbabilidadClonacion(probabilidadClonacion: double): void
+    + getTipo(): String
+    + setTipo(tipo: String): void
+    + getOperaciones(): ListaSimple<String>
+    + setOperaciones(operaciones: ListaSimple<String>): void
+    + getFijadoRecursoPosicion(): Posicion
+    + setFijadoRecursoPosicion(fijadoRecursoPosicion: Posicion): void
+    + getPosicion(): Posicion
+    + setPosicion(posicion: Posicion): void
+    + getMaxTurnosVida(): int
+    + setMaxTurnosVida(maxTurnosVida: int): void
+}
+class PropertiesNuevosIndividuos {
+    - probabilidadMejora: double
+    - turnosVida: int
+    - probabilidadReproduccion: double
+    - probabilidadClonacion: double
+    - probabilidadMuerte: double
+    + PropertiesNuevosIndividuos(probabilidadMejora: double, turnosVida: int, probabilidadReproduccion: double, probabilidadClonacion: double)
+    + getprobabilidadMejora(): double
+    + setprobabilidadMejora(probabilidadMejora: double): void
+    + getTurnosVida(): int
+    + setTurnosVida(turnosVida: int): void
+    + getProbabilidadReproduccion(): double
+    + setProbabilidadReproduccion(probabilidadReproduccion: double): void
+    + getProbabilidadMuerte(): double
+    + setProbabilidadMuerte(probabilidadMuerte: double): void
+    + getProbabilidadClonacion(): double
+    + setProbabilidadClonacion(probabilidadClonacion: double): void
+}
+
+class IndividuoModelProperties {
+    - individuoOriginal: Individuo
+    - vida: IntegerProperty
+    - probabilidadReproduccion: DoubleProperty
+    - probabilidadMuerte: DoubleProperty
+    - probabilidadClonacion: DoubleProperty
+    + IndividuoModelProperties(individuoOriginal: Individuo)
+    + setIndividuoOriginal(IndividuoOriginal: Individuo): void
+    + commit(): void
+    + rollback(): void
+    + setVida(vida: int): void
+    + setProbabilidadReproduccion(probabilidadReproduccion: int): void
+    + setProbabilidadMuerte(probabilidadReproduccion: int): void
+    + setProbabilidadClonacion(probabilidadClonacion: int): void
+    + vidaIndividuoProperty(): Property<Number>
+    + probabilidadIndividuoReproduccionProperty(): Property<Number>
+    + probabilidadIndividuoMuerteProperty(): Property<Number>
+    + probabilidadIndividuoClonacionProperty(): Property<Number>
+}
+
+class PartidaModelProperties {
+    - medidaColumnas: IntegerProperty
+    - medidaFilas: IntegerProperty
+    - medidaAguaVida: IntegerProperty
+    - medidaAguaClonacion: DoubleProperty
+    - medidaAguaReproduccion: DoubleProperty
+    - medidaAguaMuerte: DoubleProperty
+    - medidaBibliotecaVida: IntegerProperty
+    - medidaBibliotecaClonacion: DoubleProperty
+    - medidaBibliotecaReproduccion: DoubleProperty
+    - medidaBibliotecaMuerte: DoubleProperty
+    - medidaComidaVida: IntegerProperty
+    - medidaComidaClonacion: DoubleProperty
+    - medidaComidaReproduccion: DoubleProperty
+    - medidaComidaMuerte: DoubleProperty
+    - medidaMontañaVida: IntegerProperty
+    - medidaMontañaClonacion: DoubleProperty
+    - medidaMontañaReproduccion: DoubleProperty
+    - medidaMontañaMuerte: DoubleProperty
+    - medidaPozoVida: IntegerProperty
+    - medidaPozoClonacion: DoubleProperty
+    - medidaPozoReproduccion: DoubleProperty
+    - medidaPozoMuerte: DoubleProperty
+    - medidaTesoroVida: IntegerProperty
+    - medidaTesoroClonacion: DoubleProperty
+    - medidaTesoroReproduccion: DoubleProperty
+    - medidaTesoroMuerte: DoubleProperty
+    - medidaIndividuoVida: IntegerProperty
+    - medidaIndividuoClonacion: DoubleProperty
+    - medidaIndividuoReproduccion: DoubleProperty
+    - medidaIndividuoMuerte: DoubleProperty
+    + PartidaModelProperties(partida: Partida)
+    + getMedidaColumnas(): int
+    + medidaColumnasProperty(): IntegerProperty
+    + getMedidaFilas(): int
+    + medidaFilasProperty(): IntegerProperty
+    + getMedidaAguaVida(): int
+    + medidaAguaVidaProperty(): IntegerProperty
+    + getMedidaAguaClonacion(): double
+    + medidaAguaClonacionProperty(): DoubleProperty
+    + getMedidaAguaReproduccion(): double
+    + medidaAguaReproduccionProperty(): DoubleProperty
+    + getMedidaAguaMuerte(): double
+    + medidaAguaMuerteProperty(): DoubleProperty
+    + getMedidaBibliotecaVida(): int
+    + medidaBibliotecaVidaProperty(): IntegerProperty
+    + getMedidaBibliotecaClonacion(): double
+    + medidaBibliotecaClonacionProperty(): DoubleProperty
+}
+class RecursosModelProperties {
+    - recursoOriginal: Recurso
+    - vida: IntegerProperty
+    - probabilidadReproduccion: IntegerProperty
+    - probabilidadMuerte: IntegerProperty
+    - probabilidadClonacion: IntegerProperty
+    + RecursosModelProperties(recursoOriginal: Recurso)
+    + commit(): void
+    + rollback(): void
+    + setVida(vida: int): void
+    + setProbabilidadReproduccion(probabilidadReproduccion: int): void
+    + setProbabilidadMuerte(probabilidadReproduccion: int): void
+    + setProbabilidadClonacion(probabilidadClonacion: int): void
+    + vidaRecursoProperty(): Property<Number>
+    + reproduccionRecursoProperty(): Property<Number>
+    + muerteRecursoProperty(): Property<Number>
+    + clonacionRecursoProperty(): Property<Number>
+}
+class TableroModelProperties {
+    - tableroOriginal: Tablero
+    - columnas: IntegerProperty
+    - filas: IntegerProperty
+    + TableroModelProperties(tableroOriginal: Tablero)
+    + setTableroOriginal(tableroOriginal: Tablero): void
+    + getTableroOriginal(): Tablero
+    + setX(x: int): void
+    + setY(y: int): void
+    + commit(): void
+    + rollback(): void
+    + columnasProperty(): Property<Number>
+    + filasProperty(): Property<Number>
+}
+class FileReaderPartidas {
+    - leerPartidas(fileName: String): ListaSimple<String>
+    - cargarParametro(fileName: String): ListaSimple<HashMap<String, String>>
+    - cargarNombresPartidas(fileName: String): ListaSimple<String>
+    - cargarNombresIndividuos(file: String): ListaSimple<String>
+}
+class Recurso {
+    - nombre: String
+    - turnosVida: int
+    - probAparicion: double
+    - turnosVidaInd: int
+    - probReproduccionInd: double
+    - probMuerteInd: double
+    - probClonacionInd: double
+
+    + Recurso(nombre: String, turnosVida: int, probAparicion: double, turnosVidaInd: int, probReproduccionInd: double, probMuerteInd: double, probClonacionInd: double)
+    + getTurnosVida(): int
+    + setTurnosVida(turnosVida: int): void
+    + getProbAparicion(): double
+    + setProbAparicion(probAparicion: double): void
+    + getTurnosVidaInd(): int
+    + setTurnosVidaInd(turnosVidaInd: int): void
+    + getProbReproduccionInd(): double
+    + setProbReproduccionInd(probReproduccionInd: double): void
+    + getProbMuerteInd(): double
+    + setProbMuerteInd(probMuerteInd: double): void
+    + getProbClonacionInd(): double
+    + setProbClonacionInd(probClonacionInd: double): void
+    + getNombre(): String
+    + setNombre(nombre: String): void
+}
+class Agua {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
+
+    + Agua(vida: int, clonacion: int, muerte: int, reproduccion: int)
+    + setVida(vida: int): void
+    + getVida(): int
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+class Biblioteca {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
+
+    + Biblioteca(vida: int, reproduccion: int, muerte: int, clonacion: int)
+    + getVida(): int
+    + setVida(vida: int): void
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+class Comida {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
+
+    + Comida(vida: int, reproduccion: int, muerte: int, clonacion: int)
+    + getVida(): int
+    + setVida(vida: int): void
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+class Montaña {
+    - vida: int
+    - clonacion: int
+    - reproduccion: int
+    - muerte: int
+
+    + Montaña(vida: int, reproduccion: int, muerte: int, clonacion: int)
+    + getVida(): int
+    + setVida(vida: int): void
+    + getClonacion(): int
+    + setClonacion(clonacion: int): void
+    + getReproduccion(): int
+    + setReproduccion(reproduccion: int): void
+    + getMuerte(): int
+    + setMuerte(muerte: int): void
+}
+
+Recurso <|-- Montaña
+Recurso <|-- Comida
+Recurso <|-- Agua
+Recurso <|-- Biblioteca
+    IndividuoModelProperties -- Individuo : composition
+    Pila -- NodoLE
+    ListaSimple -- NodoLS
+    ListaEnlazada -- NodoLE
+    HashMap -- NodoHM
     Application <|-- StartApplication
+    Arco --> "1..*" Grafo : "relacionado con"
+    Arco "1" --> "0..*" Vertice : "origen"
+    Arco "1" --> "0..*" Vertice : "destino"
+    Individuo "1" -- "1..2" Posicion : fijadoRecursoPosicion
+    Individuo "1" -- "1..2" Posicion : posicion
+
+
 @enduml
