@@ -23,6 +23,12 @@ public class Casilla {
         this.listaRecursos = new ListaSimple<>(); // lista vacia
     }
 
+    public Casilla(Posicion posicion) {
+        this.listaIndividuos = new ListaSimple<>(); // lista vacia
+        this.listaRecursos = new ListaSimple<>(); // lista vacia
+        this.posicion = posicion;
+    }
+
     public Posicion getPosicion() {
         return posicion;
     }

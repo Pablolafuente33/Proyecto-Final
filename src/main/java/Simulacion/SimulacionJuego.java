@@ -195,25 +195,19 @@ public class SimulacionJuego {
 
         /**Grafo de operaciones entre individuos y recursos*/
         //Creamos el grafo
-        Grafo<VerticeIndividuoRecurso> grafo = new Grafo<>();
+        Grafo grafo = new Grafo<>();
         //Metemos todos los individuos como vértices
         for (int i=0; i<tablero.getListaTodosIndividuos().getNumeroElementos(); ++i){
-            Vertice<VerticeIndividuoRecurso> indiv = new Vertice<>();
-            VerticeIndividuoRecurso individuo = new VerticeIndividuoRecurso(tablero.getListaTodosIndividuos().get(i));
-            indiv.setData(individuo);
+            Vertice<Individuo> indiv = new Vertice<>(tablero.getListaTodosIndividuos().get(i));
             grafo.addVertex(indiv);
         }
         //Metemos todos los recursos como vértices
         for (int i=0; i<tablero.getListaRecursosON().getNumeroElementos(); ++i){
-            Vertice<VerticeIndividuoRecurso> recur = new Vertice<>();
-            VerticeIndividuoRecurso recursoON = new VerticeIndividuoRecurso(tablero.getListaRecursosON().get(i));
-            recur.setData(recursoON);
+            Vertice<Recurso> recur = new Vertice<>(tablero.getListaRecursosON().get(i));
             grafo.addVertex(recur);
         }
         for (int i=0; i<tablero.getListaRecursosOFF().getNumeroElementos(); ++i){
-            Vertice<VerticeIndividuoRecurso> recur = new Vertice<>();
-            VerticeIndividuoRecurso recursoOFF = new VerticeIndividuoRecurso(tablero.getListaRecursosOFF().get(i));
-            recur.setData(recursoOFF);
+            Vertice<Recurso> recur = new Vertice<>(tablero.getListaRecursosOFF().get(i));
             grafo.addVertex(recur);
         }
 

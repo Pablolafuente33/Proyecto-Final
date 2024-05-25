@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/VerticeIndividuoRecurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/AleatoriedadControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/BusquedaControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/MovimientoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/PrintControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/RecursoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/VidaControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/MovimientoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/comun/PosicionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/NodoLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/NodoLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/ListaSimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/ListaSimpleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/NodoLETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/NodoLETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,51 +30,165 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;Miguelhn12&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;assignee&quot;: &quot;Miguelhn12&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="64cb3fbc-a699-496c-87c9-bfc0b150f8bf" />
+        <option name="url" value="https://github.com/Pablolafuente33/Proyecto-Final.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2grg26R7W2bybiMiG9wPF3xqi9o" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SimulacionJuego.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Miguel",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SimulacionJuego.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AleatoriedadControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarIndividuo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarRecurso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ListaSimpleTest.add.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovimientoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovimientoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PosicionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrintControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testMuerteIndividuo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Miguel&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Controllers" />
+      <recent name="comun" />
+      <recent name="com.example.demo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PilaTest">
+    <configuration name="ListaEnlazadaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Simulacion.*" />
+          <option name="PATTERN" value="EstructurasDeDatos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaEnlazadaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListaSimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodoLETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.NodoLETest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PilaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
+      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.PilaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VidaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Controllers" />
+      <option name="MAIN_CLASS_NAME" value="Controllers.VidaControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimulacionJuego" />
+        <item itemvalue="JUnit.PilaTest" />
+        <item itemvalue="JUnit.NodoLETest" />
+        <item itemvalue="JUnit.ListaEnlazadaTest" />
+        <item itemvalue="JUnit.ListaSimpleTest" />
+        <item itemvalue="JUnit.VidaControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -93,17 +217,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Decuimales listos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decuimales listos" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
