@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
+    <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MovimientoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/RecursoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/VidaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,63 +15,63 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2grg26R7W2bybiMiG9wPF3xqi9o" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.SimulacionJuego.executor": "Run",
-    "Application.StartApplication.executor": "Run",
-    "JUnit.AguaTest.executor": "Run",
-    "JUnit.AleatoriedadControllerTest.executor": "Run",
-    "JUnit.BibliotecaTest.executor": "Run",
-    "JUnit.BusquedaControllerTest.executor": "Run",
-    "JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor": "Run",
-    "JUnit.BusquedaControllerTest.testBuscarIndividuo.executor": "Run",
-    "JUnit.BusquedaControllerTest.testBuscarRecurso.executor": "Run",
-    "JUnit.CasillaTest.executor": "Run",
-    "JUnit.ComidaTest.executor": "Run",
-    "JUnit.IndividuoModelPropertiesTest.executor": "Run",
-    "JUnit.IndividuoTest.executor": "Run",
-    "JUnit.ListaEnlazadaTest.executor": "Run",
-    "JUnit.ListaSimpleTest.add.executor": "Run",
-    "JUnit.ListaSimpleTest.executor": "Run",
-    "JUnit.MontañaTest.executor": "Run",
-    "JUnit.MovimientoControllerTest.executor": "Run",
-    "JUnit.MovimientoTest.executor": "Run",
-    "JUnit.NodoLETest.executor": "Run",
-    "JUnit.PilaTest.executor": "Run",
-    "JUnit.PosicionTest.executor": "Run",
-    "JUnit.PozoTest.executor": "Run",
-    "JUnit.PrintControllerTest.executor": "Run",
-    "JUnit.PropertiesNuevosIndividuosTest.executor": "Run",
-    "JUnit.RecursoControllerTest.executor": "Run",
-    "JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor": "Run",
-    "JUnit.RecursoTest.executor": "Run",
-    "JUnit.RecursosModelPropertiesTest.executor": "Run",
-    "JUnit.TableroTest.executor": "Run",
-    "JUnit.TesoroTest.executor": "Run",
-    "JUnit.VidaControllerTest.executor": "Run",
-    "JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor": "Run",
-    "JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor": "Run",
-    "JUnit.VidaControllerTest.testMuerteIndividuo.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Miguel",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SimulacionJuego.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AguaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AleatoriedadControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BibliotecaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarIndividuo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BusquedaControllerTest.testBuscarRecurso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CasillaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComidaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IndividuoModelPropertiesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IndividuoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ListaEnlazadaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ListaSimpleTest.add.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ListaSimpleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MontañaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovimientoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovimientoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NodoLETest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PilaTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PosicionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PozoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrintControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PropertiesNuevosIndividuosTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursoControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecursosModelPropertiesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TableroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TesoroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VidaControllerTest.testMuerteIndividuo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Miguel&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.StartApplication">
     <configuration name="SimulacionJuego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Simulacion.SimulacionJuego" />
       <module name="ProyectoFinal" />
@@ -88,8 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.StartApplication" />
+      <module name="ProyectoFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartApplication" />
         <item itemvalue="Application.SimulacionJuego" />
       </list>
     </recent_temporary>
@@ -120,7 +131,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Decuimales listos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decuimales listos" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
