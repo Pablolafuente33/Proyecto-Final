@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19d2abbc-4f42-4319-8307-10cbe37f4386" name="Changes" comment="Commit de guardar partida">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/AleatoriedadControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/BusquedaControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/MovimientoControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/PrintControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/RecursoControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Controllers/VidaControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/MovimientoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/comun/PosicionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Parameter/Properties/IndividuoModelPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Parameter/Properties/RecursosModelPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/AguaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/BibliotecaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/ComidaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/MontañaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/PozoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Recursos_Juego/TesoroTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tablero/CasillaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/individuo/IndividuoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/individuo/PropertiesNuevosIndividuosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/recurso/RecursoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/BusquedaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/NodoLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EstructurasDeDatos/NodoLE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulacion/SimulacionJuego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tablero/Casilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/ListaSimpleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/ListaSimpleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/NodoLETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EstructurasDeDatos/NodoLETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,120 +61,138 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.SimulacionJuego.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AleatoriedadControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BusquedaControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BusquedaControllerTest.testBuscarIndividuo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BusquedaControllerTest.testBuscarRecurso.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ListaSimpleTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovimientoControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovimientoTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PosicionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrintControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RecursoControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VidaControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.VidaControllerTest.testMuerteIndividuo.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Miguel&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SimulacionJuego.executor": "Run",
+    "Application.StartApplication.executor": "Run",
+    "JUnit.AguaTest.executor": "Run",
+    "JUnit.AleatoriedadControllerTest.executor": "Run",
+    "JUnit.BibliotecaTest.executor": "Run",
+    "JUnit.BusquedaControllerTest.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarCasillaRecursoMasCercano.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarIndividuo.executor": "Run",
+    "JUnit.BusquedaControllerTest.testBuscarRecurso.executor": "Run",
+    "JUnit.CasillaTest.executor": "Run",
+    "JUnit.ComidaTest.executor": "Run",
+    "JUnit.IndividuoModelPropertiesTest.executor": "Run",
+    "JUnit.IndividuoTest.executor": "Run",
+    "JUnit.ListaEnlazadaTest.executor": "Run",
+    "JUnit.ListaSimpleTest.add.executor": "Run",
+    "JUnit.ListaSimpleTest.executor": "Run",
+    "JUnit.MontañaTest.executor": "Run",
+    "JUnit.MovimientoControllerTest.executor": "Run",
+    "JUnit.MovimientoTest.executor": "Run",
+    "JUnit.NodoLETest.executor": "Run",
+    "JUnit.PilaTest.executor": "Run",
+    "JUnit.PosicionTest.executor": "Run",
+    "JUnit.PozoTest.executor": "Run",
+    "JUnit.PrintControllerTest.executor": "Run",
+    "JUnit.PropertiesNuevosIndividuosTest.executor": "Run",
+    "JUnit.RecursoControllerTest.executor": "Run",
+    "JUnit.RecursoControllerTest.testSortearNuevoRecurso.executor": "Run",
+    "JUnit.RecursoTest.executor": "Run",
+    "JUnit.RecursosModelPropertiesTest.executor": "Run",
+    "JUnit.TesoroTest.executor": "Run",
+    "JUnit.VidaControllerTest.executor": "Run",
+    "JUnit.VidaControllerTest.testActualizarTurnosVidaIndividuos.executor": "Run",
+    "JUnit.VidaControllerTest.testActualizarTurnosVidaRecursos.executor": "Run",
+    "JUnit.VidaControllerTest.testMuerteIndividuo.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Miguel",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Controllers" />
-      <recent name="comun" />
-      <recent name="com.example.demo" />
+      <recent name="Tablero" />
+      <recent name="Recursos_Juego" />
+      <recent name="recurso" />
+      <recent name="Parameter.Properties" />
+      <recent name="individuo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PilaTest">
-    <configuration name="ListaEnlazadaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TableroTest">
+    <configuration name="CasillaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="PATTERN" value="Tablero.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaEnlazadaTest" />
+      <option name="PACKAGE_NAME" value="Tablero" />
+      <option name="MAIN_CLASS_NAME" value="Tablero.CasillaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListaSimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MontañaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="PATTERN" value="Recursos_Juego.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.ListaSimpleTest" />
+      <option name="PACKAGE_NAME" value="Recursos_Juego" />
+      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.MontañaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodoLETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PozoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="PATTERN" value="Recursos_Juego.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.NodoLETest" />
+      <option name="PACKAGE_NAME" value="Recursos_Juego" />
+      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.PozoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PilaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TableroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EstructurasDeDatos.*" />
+          <option name="PATTERN" value="Tablero.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="EstructurasDeDatos" />
-      <option name="MAIN_CLASS_NAME" value="EstructurasDeDatos.PilaTest" />
+      <option name="PACKAGE_NAME" value="Tablero" />
+      <option name="MAIN_CLASS_NAME" value="Tablero.TableroTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VidaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesoroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controllers.*" />
+          <option name="PATTERN" value="Recursos_Juego.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Controllers" />
-      <option name="MAIN_CLASS_NAME" value="Controllers.VidaControllerTest" />
+      <option name="PACKAGE_NAME" value="Recursos_Juego" />
+      <option name="MAIN_CLASS_NAME" value="Recursos_Juego.TesoroTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PilaTest" />
-        <item itemvalue="JUnit.NodoLETest" />
-        <item itemvalue="JUnit.ListaEnlazadaTest" />
-        <item itemvalue="JUnit.ListaSimpleTest" />
-        <item itemvalue="JUnit.VidaControllerTest" />
+        <item itemvalue="JUnit.TableroTest" />
+        <item itemvalue="JUnit.CasillaTest" />
+        <item itemvalue="JUnit.TesoroTest" />
+        <item itemvalue="JUnit.PozoTest" />
+        <item itemvalue="JUnit.MontañaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +225,7 @@
       <updated>1716460907112</updated>
       <workItem from="1716460910604" duration="4002000" />
       <workItem from="1716546971980" duration="27651000" />
+      <workItem from="1716660012596" duration="1854000" />
     </task>
     <servers />
   </component>
