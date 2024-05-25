@@ -1,7 +1,7 @@
 package Simulacion;
 
 import Controllers.*;
-import EstructurasDeDatos.ListaSimple;
+import EstructurasDeDatos.*;
 import Tablero.Tablero;
 import Tablero.Casilla;
 import constantes.Constantes;
@@ -191,6 +191,24 @@ public class SimulacionJuego {
             System.out.println("Siguiente turno");
 
 
+        }
+
+        /**Grafo de operaciones entre individuos y recursos*/
+        //Creamos el grafo
+        Grafo grafo = new Grafo<>();
+        //Metemos todos los individuos como vértices
+        for (int i=0; i<tablero.getListaTodosIndividuos().getNumeroElementos(); ++i){
+            Vertice<Individuo> indiv = new Vertice<>(tablero.getListaTodosIndividuos().get(i));
+            grafo.addVertex(indiv);
+        }
+        //Metemos todos los recursos como vértices
+        for (int i=0; i<tablero.getListaRecursosON().getNumeroElementos(); ++i){
+            Vertice<Recurso> recur = new Vertice<>(tablero.getListaRecursosON().get(i));
+            grafo.addVertex(recur);
+        }
+        for (int i=0; i<tablero.getListaRecursosOFF().getNumeroElementos(); ++i){
+            Vertice<Recurso> recur = new Vertice<>(tablero.getListaRecursosOFF().get(i));
+            grafo.addVertex(recur);
         }
 
         System.out.println("Juego terminado!!");

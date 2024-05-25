@@ -38,10 +38,10 @@ public class BusquedaController {
     public static Casilla buscarCasillaRecursoMasCercano(Posicion actPos, ListaSimple<Casilla> listaPosiblesCasillas) {
         double distancia = 0.0;
         Casilla casillaRecursoMasCercano = null;
-        for (Casilla casilla : listaPosiblesCasillas) {
-            double dist = calcularDistancia(actPos, casilla.getPosicion());
+        for (int i=0; i<listaPosiblesCasillas.getNumeroElementos(); ++i) {
+            double dist = calcularDistancia(actPos, listaPosiblesCasillas.get(i).getPosicion());
             if (Double.compare(0.0, distancia)==0 || Double.compare(dist, distancia)<0 ) {
-                casillaRecursoMasCercano = casilla;
+                casillaRecursoMasCercano = listaPosiblesCasillas.get(i);
             }
         }
         return casillaRecursoMasCercano;

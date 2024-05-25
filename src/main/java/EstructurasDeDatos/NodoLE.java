@@ -19,4 +19,5 @@ public class NodoLE<T> {
     public void setDato(T dato) {
         this.dato = dato;
     }
+
 }
